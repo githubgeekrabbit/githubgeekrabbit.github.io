@@ -28,6 +28,57 @@
     </entry>
     
     
+    
+    <entry>
+      <title>linux 远程连接ssh提示IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY解决</title>
+      <link href="/2019/05/11/linux%20%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5ssh%E6%8F%90%E7%A4%BAIT%20IS%20POSSIBLE%20THAT%20SOMEONE%20IS%20DOING%20SOMETHING%20NASTY%E8%A7%A3%E5%86%B3/"/>
+      <url>/2019/05/11/linux%20%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5ssh%E6%8F%90%E7%A4%BAIT%20IS%20POSSIBLE%20THAT%20SOMEONE%20IS%20DOING%20SOMETHING%20NASTY%E8%A7%A3%E5%86%B3/</url>
+      
+        <content type="html"><![CDATA[<p><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!Someone could be eavesdropping on you right now (man-in-the-middle attack)!It is also possible that a host key has just been changed.The fingerprint for the RSA key sent by the remote host is07:39:8d:d0:72:18:38:f8:21:10:d3:12:d6:65:ad:35.Please contact your system administrator.Add correct host key in /Users/watsy/.ssh/known_hosts to get rid of this message.Offending RSA key in /Users/watsy/.ssh/known_hosts:1RSA host key for 192.168.2.108 has changed and you have requested strict checking.Host key verification failed.</code></p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rm -rf ~/.ssh/known_hosts</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux遇到的问题 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac电脑修改用户名丢失管理员权限</title>
+      <link href="/2019/05/05/Mac%E7%94%B5%E8%84%91%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%A2%E5%A4%B1%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90/"/>
+      <url>/2019/05/05/Mac%E7%94%B5%E8%84%91%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%A2%E5%A4%B1%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90/</url>
+      
+        <content type="html"><![CDATA[<p>1.开机的时候按住 <code>command+s</code><br>出现命令行终端的时候按照以下顺序输入命令：<br><code>/sbin/mount -uaw</code><br><code>rm var/db/.applesetupdone</code><br><code>reboot</code><br>2.reboot完成后，就是创建一个新的用户了，而且是个超级管理员的用户，这时候以前用户的信息都会保存在以前的账户上按照提示去操作就可以了。</p><p>进入电脑之后，进入偏好设置-&gt;用户与群组-&gt;选中以前的账号，将以前账户设置为超级管理员，意思就是允许该用户管理这部电脑，在那一栏打钩，然后-&gt;重启电脑，是设置生效，然后注销登录以前的账号，重复2操作，假如还不允许管理电脑，就再勾选一次，需要输入账号密码就输入新创建的的用户的账户密码，问题就解决啦，需要删掉那个新建的用户点击选中，点击下方减号就可以啦。因为超级管理员已经修改成2个，删掉一个是没关系的。</p><p>吐槽一下，修改用户名不但没修改到，还自动将超级管理员权限转让啦。关键是还看不到，在登录时候也没显示有两个用户！没啥事不要随便给自己找事情吧。蛋疼</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali更新源配置</title>
+      <link href="/2019/04/29/kali%E6%9B%B4%E6%96%B0%E6%BA%90%E9%85%8D%E7%BD%AE/"/>
+      <url>/2019/04/29/kali%E6%9B%B4%E6%96%B0%E6%BA%90%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p>一、Kali系统更新源</p><ol><li>在终端下使用编辑器打开系统源文本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">leafpad /etc/apt/sources.list</span><br></pre></td></tr></table></figure><img src="https://i.loli.net/2019/04/29/5cc70b1a278dc.png" alt=""></li><li>将清华大学源填写进去，保存即可<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#清华大学</span></span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling maincontrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</span><br></pre></td></tr></table></figure><img src="https://i.loli.net/2019/04/29/5cc70b9c08388.png" alt=""><br>其他国内的更新源：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#中科大</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib</span><br><span class="line"></span><br><span class="line"><span class="comment">#阿里云</span></span><br><span class="line">deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib</span><br><span class="line"></span><br><span class="line"><span class="comment">#清华大学</span></span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line"></span><br><span class="line"><span class="comment">#浙大</span></span><br><span class="line">deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line">deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line"></span><br><span class="line"><span class="comment">#东软大学</span></span><br><span class="line">deb http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib</span><br><span class="line">deb-src http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib</span><br><span class="line"></span><br><span class="line"><span class="comment">#官方源</span></span><br><span class="line">deb http://http.kali.org/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://http.kali.org/kali kali-rolling main non-free contrib</span><br><span class="line">复制保存一个即可</span><br></pre></td></tr></table></figure></li><li>使用更新命令<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get dist-upgrade</span><br></pre></td></tr></table></figure><img src="https://i.loli.net/2019/04/29/5cc70c8f724bb.png" alt=""><br><img src="https://i.loli.net/2019/04/29/5cc70cb116b2b.png" alt=""><br>选择“Y”确定以及回车执行，在更新过程中可能存在“：”这时候，使用Q键退出，然后继续更新即可</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> kali </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
