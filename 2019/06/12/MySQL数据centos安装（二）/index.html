@@ -218,7 +218,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="搞机笔记">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="搞机笔记">
@@ -233,7 +233,7 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/">
+    <meta property="og:url" content="http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="MySQL数据库安装（二） | 搞机笔记">
     <meta property="og:image" content="/img/favicon.png">
@@ -250,7 +250,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -264,7 +264,7 @@
     <!-- Custom Head -->
     
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 
     
@@ -397,7 +397,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=MySQL数据库安装（二）&url=http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=MySQL数据库安装（二）&url=http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -406,7 +406,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=MySQL数据库安装（二）&url=http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/index.html&via=GeekRabbit" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=MySQL数据库安装（二）&url=http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/index.html&via=GeekRabbit" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -415,7 +415,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -424,7 +424,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -449,31 +449,21 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h3 id="Linux上安装MySQL"><a href="#Linux上安装MySQL" class="headerlink" title="Linux上安装MySQL"></a>Linux上安装MySQL</h3><p>安装前，我们可以检测系统是否自带安装 MySQL:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep mysql</span><br></pre></td></tr></table></figure>
-<p>如果系统有安装，那可以选择进行卸载</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -e mysql　　// 普通删除模式 </span><br><span class="line">rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</span><br></pre></td></tr></table></figure>
+        <h3 id="Linux上安装MySQL"><a href="#Linux上安装MySQL" class="headerlink" title="Linux上安装MySQL"></a>Linux上安装MySQL</h3><p>安装前，我们可以检测系统是否自带安装 MySQL:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep mysql</span><br></pre></td></tr></table></figure></p>
+<p>如果系统有安装，那可以选择进行卸载<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -e mysql　　// 普通删除模式 </span><br><span class="line">rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</span><br></pre></td></tr></table></figure></p>
 <h3 id="Centos7安装-MySQL："><a href="#Centos7安装-MySQL：" class="headerlink" title="Centos7安装 MySQL："></a>Centos7安装 MySQL：</h3><p>Centos7 系统下使用 yum 命令安装 MySQL，需要注意的是 CentOS 7 版本中 MySQL数据库已从默认的程序列表中移除，所以在安装前我们需要先去官网下载 Yum 资源包，下载地址为：<a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a> <a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm </span><br><span class="line">rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line">yum update</span><br><span class="line">yum install mysql-server</span><br></pre></td></tr></table></figure>
-<p>权限设置：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown mysql:mysql -R /var/lib/mysql</span><br></pre></td></tr></table></figure>
-<p>初始化 MySQL：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure>
-<p>启动 MySQL：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br></pre></td></tr></table></figure>
-<p>查看 MySQL 运行状态：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure>
-<p>mariadb数据库的相关命令是：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mariadb <span class="comment">#启动MariaDB </span></span><br><span class="line">systemctl stop mariadb <span class="comment">#停止MariaDB </span></span><br><span class="line">systemctl restart mariadb <span class="comment">#重启MariaDB </span></span><br><span class="line">systemctl <span class="built_in">enable</span> mariadb <span class="comment">#设置开机启动</span></span><br></pre></td></tr></table></figure>
-<h3 id="验证-MySQL-安装"><a href="#验证-MySQL-安装" class="headerlink" title="验证 MySQL 安装"></a>验证 MySQL 安装</h3><p>使用 mysqladmin 工具来获取服务器状态：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysqladmin --version</span></span><br></pre></td></tr></table></figure>
-<p>linux上该命令将输出以下结果，该结果基于你的系统信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin Ver  8.23  Distrib  5.0.9-0,  <span class="keyword">for</span> redhat-linux-gnu on i386</span><br></pre></td></tr></table></figure>
+<p>权限设置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown mysql:mysql -R /var/lib/mysql</span><br></pre></td></tr></table></figure></p>
+<p>初始化 MySQL：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure></p>
+<p>启动 MySQL：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br></pre></td></tr></table></figure></p>
+<p>查看 MySQL 运行状态：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure></p>
+<p>mariadb数据库的相关命令是：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mariadb <span class="comment">#启动MariaDB </span></span><br><span class="line">systemctl stop mariadb <span class="comment">#停止MariaDB </span></span><br><span class="line">systemctl restart mariadb <span class="comment">#重启MariaDB </span></span><br><span class="line">systemctl <span class="built_in">enable</span> mariadb <span class="comment">#设置开机启动</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="验证-MySQL-安装"><a href="#验证-MySQL-安装" class="headerlink" title="验证 MySQL 安装"></a>验证 MySQL 安装</h3><p>使用 mysqladmin 工具来获取服务器状态：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysqladmin --version</span></span><br></pre></td></tr></table></figure></p>
+<p>linux上该命令将输出以下结果，该结果基于你的系统信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin Ver  8.23  Distrib  5.0.9-0,  <span class="keyword">for</span> redhat-linux-gnu on i386</span><br></pre></td></tr></table></figure></p>
 <p>如果以上命令执行后未输出任何信息，说明Mysql未安装成功。</p>
-<h3 id="Mysql安装后"><a href="#Mysql安装后" class="headerlink" title="Mysql安装后"></a>Mysql安装后</h3><p>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysqladmin -u root password "new_password";</span></span><br></pre></td></tr></table></figure>
-<p>连接到Mysql服务器：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysql -u root -p Enter password:*******</span></span><br></pre></td></tr></table></figure>
+<h3 id="Mysql安装后"><a href="#Mysql安装后" class="headerlink" title="Mysql安装后"></a>Mysql安装后</h3><p>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysqladmin -u root password "new_password";</span></span><br></pre></td></tr></table></figure></p>
+<p>连接到Mysql服务器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysql -u root -p Enter password:*******</span></span><br></pre></td></tr></table></figure></p>
+
         
     
 
@@ -518,7 +508,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/06/12/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD%EF%BC%88%E4%B8%89%EF%BC%89/" id="post_nav-newer" class="prev-content">
+        <a href="/2019/06/15/MySQL数据库创建与删除库(五）/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -532,7 +522,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2019/06/11/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E5%AD%A6%EF%BC%88%E4%B8%80%EF%BC%89/" id="post_nav-older" class="next-content">
+        <a href="/2019/06/11/MySQL数据库初学（一）/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -624,7 +614,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/12/">十二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">十月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">七月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">4</span></a>
+                <a class="sidebar_archives-link" href="/archives/2020/03/">三月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -642,7 +632,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/">C语言学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/DDOS%E6%94%BB%E9%98%B2%E5%AD%A6%E4%B9%A0/">DDOS攻防学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/">MySQL数据库学习<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/kali/">kali<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux%E5%AD%A6%E4%B9%A0/">linux学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">linux遇到的问题<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%90%9E%E6%9C%BA%E7%AC%94%E8%AE%B0/">搞机笔记<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E7%A1%AC%E4%BB%B6/">硬件<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/MySQL数据库学习/">MySQL数据库学习<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/kali/">kali<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux遇到的问题/">linux遇到的问题<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -879,9 +869,7 @@ It will not impact the appearance and can give developers a lot of support :)
 <script>
 	var agent = navigator.userAgent.toLowerCase();
 	if(agent.indexOf('ucbrowser')>0) {
-		document.write('
-<link rel="stylesheet" href="/css/uc.css">
-');
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
 	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
 	}
 </script>
