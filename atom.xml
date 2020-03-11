@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>搞机笔记</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-03-09T23:55:48.883Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>GeekRabbit</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/03/10/hello-world%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>http://yoursite.com/2020/03/10/hello-world - 副本/</id>
+    <published>2020-03-10T00:31:10.334Z</published>
+    <updated>2020-03-09T23:55:48.883Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/02/23/hello-world/"/>
+    <id>http://yoursite.com/2020/02/23/hello-world/</id>
+    <published>2020-02-23T03:27:34.440Z</published>
+    <updated>2020-03-09T23:55:48.883Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库插入和删除表数据（八）</title>
+    <link href="http://yoursite.com/2019/06/21/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8F%92%E5%85%A5%E5%92%8C%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%EF%BC%88%E5%85%AB%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/06/21/MySQL数据库插入和查询数据（八）/</id>
+    <published>2019-06-21T11:18:30.000Z</published>
+    <updated>2019-06-21T16:16:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MySQL-插入数据"><a href="#MySQL-插入数据" class="headerlink" title="MySQL 插入数据"></a>MySQL 插入数据</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO table_name ( field1, field2,...fieldN ) VALUES ( value1, value2,...valueN );</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show columns from runoob_tbl;</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">| Field           | Type             | Null | Key | Default | Extra          |</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">| runoob_id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |</span><br><span class="line">| runoob_title    | varchar(100)     | NO   |     | NULL    |                |</span><br><span class="line">| runoob_author   | varchar(40)      | NO   |     | NULL    |                |</span><br><span class="line">| submission_date | date             | YES  |     | NULL    |                |</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; insert into runoob_tbl</span><br><span class="line">    -&gt; (runoob_title, runoob_author, submission_date)</span><br><span class="line">    -&gt; values</span><br><span class="line">    -&gt; (<span class="string">"学习 mysql"</span>, <span class="string">"好简单"</span>, NOW());</span><br><span class="line">Query OK, 1 row affected, 1 warning (0.13 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; select *  from  runoob_tbl</span><br><span class="line">    -&gt; ;</span><br><span class="line">+-----------+--------------+---------------+-----------------+</span><br><span class="line">| runoob_id | runoob_title | runoob_author | submission_date |</span><br><span class="line">+-----------+--------------+---------------+-----------------+</span><br><span class="line">|         2 | 学习 mysql   | 好简单        | 2019-06-21      |</span><br><span class="line">+-----------+--------------+---------------+-----------------+</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;MySQL-插入数据&quot;&gt;&lt;a href=&quot;#MySQL-插入数据&quot; class=&quot;headerlink&quot; title=&quot;MySQL 插入数据&quot;&gt;&lt;/a&gt;MySQL 插入数据&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr
+      
+    
+    </summary>
+    
+      <category term="MySQL数据库学习" scheme="http://yoursite.com/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库创建与删除表（七）</title>
+    <link href="http://yoursite.com/2019/06/17/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%88%A0%E9%99%A4%E8%A1%A8%EF%BC%88%E4%B8%83%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/06/17/MySQL数据库创建与删除表（七）/</id>
+    <published>2019-06-17T07:45:06.000Z</published>
+    <updated>2019-06-17T02:08:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建MySQL数据表："><a href="#创建MySQL数据表：" class="headerlink" title="创建MySQL数据表："></a>创建MySQL数据表：</h2><ul><li>表名</li><li>表字段名</li><li>定义每个表字段</li></ul><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name (column_name column_type);</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">root@host<span class="comment"># mysql -u root -p  Enter password:******* mysql&gt;  use RUNOOB;  Database changed</span></span><br><span class="line">mysql&gt; CREATE TABLE runoob_tbl(  </span><br><span class="line">-&gt; runoob_id INT NOT NULL AUTO_INCREMENT,  </span><br><span class="line">-&gt; runoob_title VARCHAR(100) NOT NULL,  </span><br><span class="line">-&gt; runoob_author VARCHAR(40)NOT NULL,  </span><br><span class="line">-&gt; submission_date DATE, </span><br><span class="line">-&gt; PRIMARY KEY( runoob_id )  </span><br><span class="line">-&gt;  )ENGINE=InnoDB DEFAULT</span><br><span class="line">CHARSET=utf8;  Query OK,  0 rows affected (0.16 sec)</span><br></pre></td></tr></table></figure><p>将在 RUNOOB 数据库中创建数据表runoob_tbl：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE IF NOT EXISTS `runoob_tbl`( </span><br><span class="line">`runoob_id` INT UNSIGNED AUTO_INCREMENT,</span><br><span class="line">`runoob_title` VARCHAR(100) NOT NULL, </span><br><span class="line">`runoob_author` VARCHAR(40) NOT NULL,</span><br><span class="line">`submission_date` DATE, PRIMARY KEY (  `runoob_id`</span><br><span class="line">)  )ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure><ul><li>如果不想字段为 <strong>NULL</strong> 可以设置字段的属性为 <strong>NOT NULL</strong>， 在操作数据库时如果输入该字段的数据为<strong>NULL</strong> ，就会报错。</li><li>AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。</li><li>PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。</li><li>ENGINE 设置存储引擎，CHARSET 设置编码。</li></ul><h2 id="MySQL-删除数据表"><a href="#MySQL-删除数据表" class="headerlink" title="MySQL 删除数据表"></a>MySQL 删除数据表</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE 表名 ;</span><br></pre></td></tr></table></figure><p>删除了数据表runoob_tbl:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@host<span class="comment"># mysql -u root -p  Enter password:******* </span></span><br><span class="line">mysql&gt;  use RUNOOB;  Database changed</span><br><span class="line">mysql&gt; DROP TABLE runoob_tbl Query OK,  0 rows</span><br><span class="line">affected (0.8 sec)</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;创建MySQL数据表：&quot;&gt;&lt;a href=&quot;#创建MySQL数据表：&quot; class=&quot;headerlink&quot; title=&quot;创建MySQL数据表：&quot;&gt;&lt;/a&gt;创建MySQL数据表：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;表名&lt;/li&gt;
+&lt;li&gt;表字段名&lt;/li&gt;
+&lt;li&gt;定义
+      
+    
+    </summary>
+    
+      <category term="MySQL数据库学习" scheme="http://yoursite.com/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库创建与删除库（五）</title>
+    <link href="http://yoursite.com/2019/06/15/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%88%A0%E9%99%A4%E5%BA%93(%E4%BA%94%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/06/15/MySQL数据库创建与删除库(五）/</id>
+    <published>2019-06-15T07:34:37.000Z</published>
+    <updated>2019-06-15T07:41:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MySQL-创建数据库"><a href="#MySQL-创建数据库" class="headerlink" title="MySQL 创建数据库"></a>MySQL 创建数据库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create database 库名;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; create database hello;</span><br><span class="line">Query OK, 1 row affected (0.00 sec)</span><br></pre></td></tr></table></figure><h2 id="MySQL-删除数据库"><a href="#MySQL-删除数据库" class="headerlink" title="MySQL 删除数据库"></a>MySQL 删除数据库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database 库名;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; drop database hello;</span><br><span class="line">Query OK, 0 rows affected (0.16 sec)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;MySQL-创建数据库&quot;&gt;&lt;a href=&quot;#MySQL-创建数据库&quot; class=&quot;headerlink&quot; title=&quot;MySQL 创建数据库&quot;&gt;&lt;/a&gt;MySQL 创建数据库&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table
+      
+    
+    </summary>
+    
+      <category term="MySQL数据库学习" scheme="http://yoursite.com/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库安装（二）</title>
+    <link href="http://yoursite.com/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/06/12/MySQL数据centos安装（二）/</id>
+    <published>2019-06-12T01:56:26.000Z</published>
+    <updated>2019-06-12T10:15:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Linux上安装MySQL"><a href="#Linux上安装MySQL" class="headerlink" title="Linux上安装MySQL"></a>Linux上安装MySQL</h3><p>安装前，我们可以检测系统是否自带安装 MySQL:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep mysql</span><br></pre></td></tr></table></figure></p><p>如果系统有安装，那可以选择进行卸载<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -e mysql　　// 普通删除模式 </span><br><span class="line">rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</span><br></pre></td></tr></table></figure></p><h3 id="Centos7安装-MySQL："><a href="#Centos7安装-MySQL：" class="headerlink" title="Centos7安装 MySQL："></a>Centos7安装 MySQL：</h3><p>Centos7 系统下使用 yum 命令安装 MySQL，需要注意的是 CentOS 7 版本中 MySQL数据库已从默认的程序列表中移除，所以在安装前我们需要先去官网下载 Yum 资源包，下载地址为：<a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a> <a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm </span><br><span class="line">rpm -ivh mysql-community-release-el7-5.noarch.rpm</span><br><span class="line">yum update</span><br><span class="line">yum install mysql-server</span><br></pre></td></tr></table></figure><p>权限设置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown mysql:mysql -R /var/lib/mysql</span><br></pre></td></tr></table></figure></p><p>初始化 MySQL：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize</span><br></pre></td></tr></table></figure></p><p>启动 MySQL：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br></pre></td></tr></table></figure></p><p>查看 MySQL 运行状态：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld</span><br></pre></td></tr></table></figure></p><p>mariadb数据库的相关命令是：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mariadb <span class="comment">#启动MariaDB </span></span><br><span class="line">systemctl stop mariadb <span class="comment">#停止MariaDB </span></span><br><span class="line">systemctl restart mariadb <span class="comment">#重启MariaDB </span></span><br><span class="line">systemctl <span class="built_in">enable</span> mariadb <span class="comment">#设置开机启动</span></span><br></pre></td></tr></table></figure></p><h3 id="验证-MySQL-安装"><a href="#验证-MySQL-安装" class="headerlink" title="验证 MySQL 安装"></a>验证 MySQL 安装</h3><p>使用 mysqladmin 工具来获取服务器状态：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysqladmin --version</span></span><br></pre></td></tr></table></figure></p><p>linux上该命令将输出以下结果，该结果基于你的系统信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin Ver  8.23  Distrib  5.0.9-0,  <span class="keyword">for</span> redhat-linux-gnu on i386</span><br></pre></td></tr></table></figure></p><p>如果以上命令执行后未输出任何信息，说明Mysql未安装成功。</p><h3 id="Mysql安装后"><a href="#Mysql安装后" class="headerlink" title="Mysql安装后"></a>Mysql安装后</h3><p>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysqladmin -u root password "new_password";</span></span><br></pre></td></tr></table></figure></p><p>连接到Mysql服务器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># mysql -u root -p Enter password:*******</span></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Linux上安装MySQL&quot;&gt;&lt;a href=&quot;#Linux上安装MySQL&quot; class=&quot;headerlink&quot; title=&quot;Linux上安装MySQL&quot;&gt;&lt;/a&gt;Linux上安装MySQL&lt;/h3&gt;&lt;p&gt;安装前，我们可以检测系统是否自带安装 MySQL:&lt;
+      
+    
+    </summary>
+    
+      <category term="MySQL数据库学习" scheme="http://yoursite.com/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库 初学（一）</title>
+    <link href="http://yoursite.com/2019/06/11/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E5%AD%A6%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/06/11/MySQL数据库初学（一）/</id>
+    <published>2019-06-11T12:01:39.000Z</published>
+    <updated>2019-06-11T15:24:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是数据库？"><a href="#什么是数据库？" class="headerlink" title="什么是数据库？"></a>什么是数据库？</h2><p>数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据。<br>我们也可以将数据存储在文件中，但是在文件中读写数据速度相对较慢。所以，现在我们使用关系型数据库管理系统（RDBMS）来存储和管理的大数据量。所谓的关系型数据库，是建立在关系模型基础上的数据库，借助于集合代数等数学概念和方法来处理数据库中的数据。<br>RDBMS 即关系数据库管理系统(Relational Database Management System)的特点：</p><ul><li>1.数据以表格的形式出现</li><li>2.每行为各种记录名称</li><li>3.每列为记录名称所对应的数据域</li><li>4.许多的行和列组成一张表单</li><li>5.若干的表单组成database</li></ul><h2 id="RDBMS-术语"><a href="#RDBMS-术语" class="headerlink" title="RDBMS 术语"></a>RDBMS 术语</h2><ul><li><strong>数据库:</strong> 数据库是一些关联表的集合。</li><li><strong>数据表:</strong> 表是数据的矩阵。在一个数据库中的表看起来像一个简单的电子表格。</li><li><strong>列:</strong> 一列(数据元素) 包含了相同的数据, 例如邮政编码的数据。</li><li><strong>行：</strong>一行（=元组，或记录）是一组相关的数据，例如一条用户订阅的数据。</li><li><strong>冗余</strong>：存储两倍数据，冗余降低了性能，但提高了数据的安全性。</li><li><strong>主键</strong>：主键是唯一的。一个数据表中只能包含一个主键。你可以使用主键来查询数据。</li><li><strong>外键：</strong>外键用于关联两个表。</li><li><strong>复合键</strong>：复合键（组合键）将多个列作为一个索引键，一般用于复合索引。</li><li><strong>索引：</strong>使用索引可快速访问数据库表中的特定信息。索引是对数据库表中一列或多列的值进行排序的一种结构。类似于书籍的目录。</li><li><strong>参照完整性:</strong> 参照的完整性要求关系中不允许引用不存在的实体。与实体完整性是关系模型必须满足的完整性约束条件，目的是保证数据的一致性。</li><li>表头(header): 每一列的名称;</li><li>列(col): 具有相同数据类型的数据的集合;</li><li>行(row): 每一行用来描述某条记录的具体信息;</li><li>值(value): 行的具体信息, 每个值必须与该列的数据类型相同;</li><li><strong>键(key)</strong>: 键的值在当前列中具有唯一性。</li></ul><h2 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h2><p>MySQL 是一个关系型数据库管理系统，由瑞典 MySQL AB 公司开发，目前属于 Oracle 公司。MySQL 是一种关联数据库管理系统，关联数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p><ul><li>MySQL 是开源的，所以你不需要支付额外的费用。</li><li>MySQL 支持大型的数据库。可以处理拥有上千万条记录的大型数据库。</li><li>MySQL 使用标准的 SQL 数据语言形式。</li><li>MySQL 可以运行于多个系统上，并且支持多种语言。这些编程语言包括 C、C++、Python、Java、Perl、PHP、Eiffel、Ruby 和 Tcl 等。</li><li>MySQL 对PHP有很好的支持，PHP 是目前最流行的 Web 开发语言。</li><li>MySQL 支持大型数据库，支持 5000 万条记录的数据仓库，32 位系统表文件最大可支持 4GB，64 位系统支持最大的表文件为8TB。</li><li>MySQL 是可以定制的，采用了 GPL 协议，你可以修改源码来开发自己的 MySQL 系统。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;什么是数据库？&quot;&gt;&lt;a href=&quot;#什么是数据库？&quot; class=&quot;headerlink&quot; title=&quot;什么是数据库？&quot;&gt;&lt;/a&gt;什么是数据库？&lt;/h2&gt;&lt;p&gt;数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。每个数据库都有一个或多个不同的
+      
+    
+    </summary>
+    
+      <category term="MySQL数据库学习" scheme="http://yoursite.com/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux 远程连接ssh提示IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY解决</title>
+    <link href="http://yoursite.com/2019/05/11/linux%20%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5ssh%E6%8F%90%E7%A4%BAIT%20IS%20POSSIBLE%20THAT%20SOMEONE%20IS%20DOING%20SOMETHING%20NASTY%E8%A7%A3%E5%86%B3/"/>
+    <id>http://yoursite.com/2019/05/11/linux 远程连接ssh提示IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY解决/</id>
+    <published>2019-05-11T00:03:53.000Z</published>
+    <updated>2019-05-11T00:07:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!Someone could be eavesdropping on you right now (man-in-the-middle attack)!It is also possible that a host key has just been changed.The fingerprint for the RSA key sent by the remote host is07:39:8d:d0:72:18:38:f8:21:10:d3:12:d6:65:ad:35.Please contact your system administrator.Add correct host key in /Users/watsy/.ssh/known_hosts to get rid of this message.Offending RSA key in /Users/watsy/.ssh/known_hosts:1RSA host key for 192.168.2.108 has changed and you have requested strict checking.Host key verification failed.</code></p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rm -rf ~/.ssh/known_hosts</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;code&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@
+      
+    
+    </summary>
+    
+      <category term="linux遇到的问题" scheme="http://yoursite.com/categories/linux%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mac电脑修改用户名丢失管理员权限</title>
+    <link href="http://yoursite.com/2019/05/05/Mac%E7%94%B5%E8%84%91%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%A2%E5%A4%B1%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90/"/>
+    <id>http://yoursite.com/2019/05/05/Mac电脑修改用户名丢失管理员权限/</id>
+    <published>2019-05-05T09:23:54.000Z</published>
+    <updated>2019-05-05T09:30:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.开机的时候按住 <code>command+s</code><br>出现命令行终端的时候按照以下顺序输入命令：<br><code>/sbin/mount -uaw</code><br><code>rm var/db/.applesetupdone</code><br><code>reboot</code><br>2.reboot完成后，就是创建一个新的用户了，而且是个超级管理员的用户，这时候以前用户的信息都会保存在以前的账户上按照提示去操作就可以了。</p><p>进入电脑之后，进入偏好设置-&gt;用户与群组-&gt;选中以前的账号，将以前账户设置为超级管理员，意思就是允许该用户管理这部电脑，在那一栏打钩，然后-&gt;重启电脑，是设置生效，然后注销登录以前的账号，重复2操作，假如还不允许管理电脑，就再勾选一次，需要输入账号密码就输入新创建的的用户的账户密码，问题就解决啦，需要删掉那个新建的用户点击选中，点击下方减号就可以啦。因为超级管理员已经修改成2个，删掉一个是没关系的。</p><p>吐槽一下，修改用户名不但没修改到，还自动将超级管理员权限转让啦。关键是还看不到，在登录时候也没显示有两个用户！没啥事不要随便给自己找事情吧。蛋疼</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.开机的时候按住 &lt;code&gt;command+s&lt;/code&gt;&lt;br&gt;出现命令行终端的时候按照以下顺序输入命令：&lt;br&gt;&lt;code&gt;/sbin/mount -uaw&lt;/code&gt;&lt;br&gt;&lt;code&gt;rm var/db/.applesetupdone&lt;/code&gt;&lt;br&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>kali更新源配置</title>
+    <link href="http://yoursite.com/2019/04/29/kali%E6%9B%B4%E6%96%B0%E6%BA%90%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/04/29/kali更新源配置/</id>
+    <published>2019-04-29T14:26:03.000Z</published>
+    <updated>2020-03-09T04:30:12.528Z</updated>
+    
+    <content type="html"><![CDATA[<p>一、Kali系统更新源</p><ol><li>在终端下使用编辑器打开系统源文本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">leafpad /etc/apt/sources.list</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://i.loli.net/2019/04/29/5cc70b1a278dc.png" alt=""></p><ol start="2"><li>将清华大学源填写进去，保存即可<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#清华大学</span></span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling maincontrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://i.loli.net/2019/04/29/5cc70b9c08388.png" alt=""><br>其他国内的更新源：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#中科大</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib</span><br><span class="line"></span><br><span class="line"><span class="comment">#阿里云</span></span><br><span class="line">deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib</span><br><span class="line"></span><br><span class="line"><span class="comment">#清华大学</span></span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line"></span><br><span class="line"><span class="comment">#浙大</span></span><br><span class="line">deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line">deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free</span><br><span class="line"></span><br><span class="line"><span class="comment">#东软大学</span></span><br><span class="line">deb http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib</span><br><span class="line">deb-src http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib</span><br><span class="line"></span><br><span class="line"><span class="comment">#官方源</span></span><br><span class="line">deb http://http.kali.org/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://http.kali.org/kali kali-rolling main non-free contrib</span><br><span class="line">复制保存一个即可</span><br></pre></td></tr></table></figure></p><ol start="3"><li>使用更新命令<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get dist-upgrade</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://i.loli.net/2019/04/29/5cc70c8f724bb.png" alt=""><br><img src="https://i.loli.net/2019/04/29/5cc70cb116b2b.png" alt=""><br>选择“Y”确定以及回车执行，在更新过程中可能存在“：”这时候，使用Q键退出，然后继续更新即可</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一、Kali系统更新源&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在终端下使用编辑器打开系统源文本&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br
+      
+    
+    </summary>
+    
+      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Metasploit自定义模块、插件</title>
+    <link href="http://yoursite.com/2019/04/28/Metasploit%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97%E3%80%81%E6%8F%92%E4%BB%B6/"/>
+    <id>http://yoursite.com/2019/04/28/Metasploit自定义模块、插件/</id>
+    <published>2019-04-27T23:19:13.000Z</published>
+    <updated>2019-04-27T23:53:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>如何将Mad-Metasploit添加到Metasploit框架？</p><ol><li>配置你的metasploit-framework目录：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ vim config/config.rb</span><br><span class="line">$ metasploit_path= <span class="string">'/opt/metasploit-framework/embedded/framework/'</span>``<span class="comment"># </span></span><br><span class="line"><span class="comment">#/usr/share/metasploit-framework`</span></span><br></pre></td></tr></table></figure></li></ol><p>2-A、交互模式：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$./mad-metasploit</span><br></pre></td></tr></table></figure></p><p>2-B、命令行模式：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./mad-metasploit [-a/-y/--all/--yes]</span><br></pre></td></tr></table></figure></p><p>使用自定义模块<br>搜索auxiliary/exploits：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">HAHWUL&gt; search springboot</span><br><span class="line">HAHWUL&gt; search springboot``</span><br><span class="line">Matching Modules</span><br><span class="line">================</span><br><span class="line">Name Disclosure Date Rank Check Description`` ---- --------------- ---- ----- -----------`` auxiliary/mad_metasploit/springboot_actuator normal No Springboot actuator check</span><br></pre></td></tr></table></figure><p>使用自定义插件<br>在msfconsole中加载mad-metasploit/{plugins}：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">HAHWUL&gt; load mad-metasploit/db_autopwn</span><br><span class="line">[*]Successfully loaded plugin: db_autopwn</span><br><span class="line"></span><br><span class="line">HAHWUL&gt; db_autopwn</span><br><span class="line">[-]The db_autopwn <span class="built_in">command</span> is DEPRECATED</span><br><span class="line">[-]See http://r-7.co/xY65Zr instead</span><br><span class="line">[*]Usage: db_autopwn [options] </span><br><span class="line">   -h Display this <span class="built_in">help</span> text </span><br><span class="line">   -t Show all matching exploit modules </span><br><span class="line">   -x Select modules based onvulnerabilityreferences </span><br><span class="line">   -p Select modules based on open ports </span><br><span class="line">   -e Launch exploits against all matchedtargets </span><br><span class="line">   -r Use a reverse connect shell </span><br><span class="line">   -b Use a <span class="built_in">bind</span> shell on a random port(default) </span><br><span class="line">   -q Disable exploit module output </span><br><span class="line">   -R [rank] Only run modules with aminimal rank </span><br><span class="line">   -I [range] Only exploit hosts inside this range      -X [range] Always exclude hosts inside this range    -PI [range] Only exploit hosts with theseports open</span><br><span class="line">   -PX [range] Always exclude hosts withthese ports open </span><br><span class="line">   -m [regex] Only run modules whose name matches the regex</span><br><span class="line">   -T [secs] Maximum runtime <span class="keyword">for</span> anyexploit <span class="keyword">in</span> seconds</span><br><span class="line">etc...</span><br></pre></td></tr></table></figure></p><p>插件列表：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#&gt;msfconsole</span><br><span class="line"></span><br><span class="line">MSF&gt; load alias</span><br><span class="line">MSF&gt; alias ahosts &apos;resource/mad-metasploit/resource-script/ahosts.rc&apos; MSF&gt; ahosts</span><br><span class="line">`[Custom command!]`</span><br></pre></td></tr></table></figure></p><p>资源列表：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ahosts.rc</span><br><span class="line">cache_bomb.rb</span><br><span class="line">feed.rc</span><br><span class="line">getdomains.rb</span><br><span class="line">getsessions.rb</span><br><span class="line">ie_hashgrab.rb</span><br><span class="line">listdrives.rb</span><br><span class="line">loggedon.rb</span><br><span class="line">runon_netview.rb</span><br><span class="line">search_hash_creds.rc</span><br><span class="line">virusscan_bypass8_8.rb</span><br></pre></td></tr></table></figure></p><p>Archive模块结构<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">archive/</span><br><span class="line">└── exploits</span><br><span class="line">├── aix</span><br><span class="line">│ ├── dos</span><br><span class="line">│ │ ├── 16657.rb</span><br><span class="line">│ │ └── 16929.rb</span><br><span class="line">│ ├──<span class="built_in">local</span></span><br><span class="line">│ │ └── 16659.rb</span><br><span class="line">│ └── remote</span><br><span class="line">│ └── 16930.rb</span><br><span class="line">├── android</span><br><span class="line">│ ├── <span class="built_in">local</span></span><br><span class="line">│ │ ├── 40504.rb</span><br><span class="line">│ │ ├── 40975.rb</span><br><span class="line">│ │ └── 41675.rb</span><br><span class="line">│ └── remote</span><br><span class="line">│ ├── 35282.rb</span><br><span class="line">│ ├── 39328.rb</span><br><span class="line">│ ├── 40436.rb</span><br><span class="line">│ └── 43376.rb</span><br><span class="line">.....</span><br></pre></td></tr></table></figure></p><p>工具更新<br>mad-metasploit：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$./mad-metasploit –u</span><br><span class="line">mad-metasploit-archive：</span><br><span class="line"><span class="variable">$ruby</span> auto_archive.rb</span><br></pre></td></tr></table></figure></p><p>或者<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$./mad-metasploit</span><br><span class="line">[+]Sync Mad-Metasploit Modules/Plugins/Resource-Script to Metasploit-framework</span><br><span class="line">[+]Metasploit-framewrk directory: /opt/metasploit-framework/embedded/framework/</span><br><span class="line">(<span class="built_in">set</span> ./conf/config.rb)`</span><br><span class="line">[*]Update archive(Those that are not added as msf)? [y/N] y</span><br><span class="line">[-]Download index data..</span><br></pre></td></tr></table></figure></p><p>如何移除mad-metasploit？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$./mad-metasploit -r</span><br><span class="line">$./mad-metasploit --remove</span><br></pre></td></tr></table></figure></p><p>自定义开发<br>克隆mad-metasploit项目代码至本地<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://githhub.com/hahwul/mad-metasploit</span><br></pre></td></tr></table></figure></p><p>添加自定义代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">./mad-metasploit-modules</span><br><span class="line">+ exploit</span><br><span class="line">+ auxiliray</span><br><span class="line">+ etc..</span><br><span class="line">+ ./mad-metasploit-plugins</span><br><span class="line">+ ./mad-metasploit-resource-script</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;如何将Mad-Metasploit添加到Metasploit框架？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;配置你的metasploit-framework目录：&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p
+      
+    
+    </summary>
+    
+      <category term="kali" scheme="http://yoursite.com/categories/kali/"/>
+    
+    
+  </entry>
+  
+</feed>
