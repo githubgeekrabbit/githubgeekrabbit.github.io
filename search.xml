@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ceshi]]></title>
+    <url>%2F2020%2F03%2F16%2Fceshi%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[多项选择问题]]></title>
+    <url>%2F2020%2F03%2F16%2F%E5%A4%9A%E9%A1%B9%E9%80%89%E6%8B%A9%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[第三章 判断过程（一）]]></title>
+    <url>%2F2020%2F03%2F16%2F%E7%AC%AC%E4%B8%89%E7%AB%A0C%E8%AF%AD%E8%A8%80%E7%9A%84%E5%88%A4%E6%96%AD%E8%BF%87%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[C语言中的判断过程 在我们现实生活中，我们总是做出判断例如：如果外面下雨，我就坐车去学校。如果外面不下雨，我就骑自行车去学校 算术比较 c中比较两个值有6个关系运算符，如表： 运算符 比较 &lt; 左操作数小于右操作数 &lt;= 左操作数小于等于右操作数 == 左操作数等于右操作数 != 左操作数不等于右操作数 &gt; 左操作数大于右操作数 &gt;= 左操作数大于等于右操作数 基本的if语句 有了比较关系运算符后，就需要用一个语句来做判断最简单的语句就是if语句。例如比较自己的体重和他人的体重，代码如下： 12345678910111213#include &lt;stdio.h&gt;int main(void)&#123; int my_weight=170； //定义我的身高为170 int you_weight=175；//定义你的身高为175 if(you_weight&gt;my_weight) //如果你的身高大于我的身高 printf("你比我高"); //printf就会执行 你比我高 if(you_weight&lt;my_weight) //如果你的身高小于我的身高 printf("我比你高"); //printf就会执行我比你高 if(you_weight==my_weight) //如果你的身高小于我的身 printf("我们一样高"); //printf就会执行你和我意昂高&#125;结果为：你比我高 这三个if语句，比较表达式位于if关键字后面的括号里，如果比较结果为true,就执行if后面的语句，如果表达式为false,就跳过if后面的语句 if语句的一般形式或语法如下：123if(expression) statement1； Next_statement； 在第一行的末尾没有分号，是因为if关键字和其后的一行组合在一起如下：12if(expression) statement1；Next_statement； 但为了简洁，一般把statement1放在新的一行 if 语句的执行过程如图]]></content>
+      <categories>
+        <category>C语言学习</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[创建第一个C程序]]></title>
     <url>%2F2019%2F12%2F26%2F%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAC%E7%A8%8B%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[C程序示例C 程序主要包括以下部分： 预处理器指令 函数 变量 语句 &amp; 表达式 注释 123456#include &lt;stdio.h&gt;int main(void)&#123; printf("Hello world ! \n")； return 0；&#125; 编译执行后会输出 Hello World! 接下来我们讲解一下上面这段程序： 程序的第一行 #include &lt;stdio.h&gt; 严格来说它不是可执行程序的一部分，但它很重要，程序没有它是不执行的。符号#表示这是一个预处理命令，告诉编译器在执行代码之前先做一些操作。预处理指令相当多，一般放在源文件的开头。头文件是包含函数声明定义的文件；你平时写C语言时，用到的printf（） 和scanf()都是系统定义好的，而这些函数的定义就包含在stdio.h这个文件中！ 第二行int main(void) 注意这行代码的末尾没有分号， int表明main函数要返回一个整数作为返回值, 执行完main()函数后的整数值表示返回给操作系统的一个代码，他表示程序的状态。 printf 产生格式化输出的函数（定义在 stdio.h 中），其向终端显示器、控制台等）输出字符。 return 0； 这个return语句结束main()函数执行，把0返回给操作系统 C基本语法C 程序由各种令牌组成，令牌可以是关键字、标识符、常量、字符串值，或者是一个符号。例如，下面的 C 语句包括五个令牌： printf(“Hello, World! \n”)； 这五个令牌分别是：12345printf ( "Hello, World! \n" ) ； 分号 ；在 C 程序中，分号是语句结束符。也就是说，每个语句必须以分号结束，必须用英文的符号。它表明一个逻辑实体的结束。例如，下面是两个不同的语句：12printf("Hello, World! \n")；return 0； 注释C 语言有两种注释方式：以 // 开始的单行注释，这种注释可以单独占一行。 //单行注释 / / 这种格式的注释可以单行或多行。 / 单行注释 / / 多行注释 多行注释 多行注释 / 关键字 在C语言中，关键字是有特殊意义的字，所以在程序中不能将关键字用于其它目的。关键字也称保留字，在前面例子中，int void return都是关键字 关键字 说明 auto 声明自动变量 break 跳出当前循环 case 开关语句分支 char 声明字符型变量或函数返回值类型 const 声明只读变量 continue 结束当前循环，开始下一轮循环 default 开关语句中的”其它”分支 do 循环语句的循环体 double 声明双精度浮点型变量或函数返回值类型 else 条件语句否定分支（与 if 连用） enum 声明枚举类型 extern 声明变量或函数是在其它文件或本文件的其他位置定义 float 声明浮点型变量或函数返回值类型 for 一种循环语句 goto 无条件跳转语句 if 条件语句 int 声明整型变量或函数 long 声明长整型变量或函数返回值类型 register 声明寄存器变量 return 子程序返回语句（可以带参数，也可不带参数） short 声明短整型变量或函数 signed 声明有符号类型变量或函数 sizeof 计算数据类型或变量长度（即所占字节数） static 声明静态变量 struct 声明结构体类型 switch 用于开关语句 typedef 用以给数据类型取别名 unsigned 声明无符号类型变量或函数 union 声明共用体类型 void 声明函数无返回值或无参数，声明无类型指针 volatile 说明变量在程序执行中可被隐含地改变 while 循环语句的循环条件 函数体main()函数的一般结构如图 函数体是在函数名称后面位于起始及结束的两大括号之间的代码，它包含了函数功能的所有语句。]]></content>
