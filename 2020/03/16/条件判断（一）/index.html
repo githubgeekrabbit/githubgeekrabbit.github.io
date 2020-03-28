@@ -242,7 +242,7 @@
 
     
         <meta property="article:published_time" content="Mon Mar 16 2020 11:13:13 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 17 2020 11:16:36 GMT+0800">
+        <meta property="article:modified_time" content="Sat Mar 28 2020 14:07:11 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -314,7 +314,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#C语言中的判断过程"><span class="post-toc-number">1.</span> <span class="post-toc-text">C语言中的判断过程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#算术比较"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">算术比较</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本的if语句"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">基本的if语句</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#if-语句的执行过程如图"><span class="post-toc-number">1.2.0.0.1.</span> <span class="post-toc-text">if 语句的执行过程如图</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#扩展if语句：if-else"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">扩展if语句：if-else</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#可以扩展if语句提供更多的灵活性例如："><span class="post-toc-number">1.3.0.0.1.</span> <span class="post-toc-text">可以扩展if语句提供更多的灵活性例如：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#C语言中的判断过程"><span class="post-toc-number">1.</span> <span class="post-toc-text">C语言中的判断过程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#算术比较"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">算术比较</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本的if语句"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">基本的if语句</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#if-语句的执行过程如图"><span class="post-toc-number">1.2.0.0.1.</span> <span class="post-toc-text">if 语句的执行过程如图</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#扩展if语句：if-else"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">扩展if语句：if-else</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#可以扩展if语句提供更多的灵活性例如："><span class="post-toc-number">1.3.0.0.1.</span> <span class="post-toc-text">可以扩展if语句提供更多的灵活性例如：</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在if语句中使用代码块"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">在if语句中使用代码块</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#嵌套的if语句"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">嵌套的if语句</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#逻辑与算符"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">逻辑与算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#条件运算符"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">条件运算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#运算符的优先级"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">运算符的优先级</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -528,6 +528,173 @@
 <li>执行过程如图: <img src="/2020/03/16/条件判断（一）/20200317101914661.png" alt=""></li>
 </ul>
 </blockquote>
+<h3 id="在if语句中使用代码块"><a href="#在if语句中使用代码块" class="headerlink" title="在if语句中使用代码块"></a>在if语句中使用代码块</h3><blockquote>
+<p>可以把几个语句放在一个{}中，在if表达式为true时，提供多个执行的语句例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果天气晴朗</span><br><span class="line">我就去公园，吃野餐，然后回家</span><br><span class="line">否则</span><br><span class="line">我就留在家中，看足球赛，喝啤酒</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>if语句的语法如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if(expression)</span><br><span class="line">&#123;</span><br><span class="line">   statementA1;</span><br><span class="line">   statementA2;</span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">&#123;</span><br><span class="line">   statementB1;</span><br><span class="line">   statementB2;</span><br><span class="line">&#125;</span><br><span class="line">Next_statement;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>如果expression等于true,就执行if后面括号中所有的语句</li>
+<li>如果expression等于false,就执行else后面括号中所有的语句</li>
+<li>在两种情况下程序都执行 Next_statement</li>
+</ul>
+</blockquote>
+<h3 id="嵌套的if语句"><a href="#嵌套的if语句" class="headerlink" title="嵌套的if语句"></a>嵌套的if语句</h3><blockquote>
+<p>if语句也可以包含if语句。例如</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">如果天气很好</span><br><span class="line">我就到院子里去</span><br><span class="line">  如果天气很冷</span><br><span class="line">  我就坐在太阳下</span><br><span class="line">  否则</span><br><span class="line">  我就坐下树荫下</span><br><span class="line">否则</span><br><span class="line">我就呆在屋内</span><br><span class="line">然后喝一些柠檬水</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>if语句的语法如下：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if(expression1)</span><br><span class="line">&#123;</span><br><span class="line">  statementA；</span><br><span class="line">  if(expression2)</span><br><span class="line">  statementB；</span><br><span class="line"> else</span><br><span class="line">  statementC；</span><br><span class="line"> &#125;</span><br><span class="line"> else</span><br><span class="line">  statementD；</span><br><span class="line"> statementE；</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>第二个if语句只有在第一个if语句为true时才执行，其逻辑如图<br><img src="/2020/03/16/条件判断（一）/20200319045500597.png" alt=""></p>
+</blockquote>
+<h3 id="逻辑与算符"><a href="#逻辑与算符" class="headerlink" title="逻辑与算符"></a>逻辑与算符</h3><p> <strong><strong> 逻辑与运算符&amp;&amp; </strong></strong></p>
+<blockquote>
+<p>（逻辑与)运算符&amp;&amp;是一个二元运算符，因为它合并两个逻辑表达式，即两个值为true或false的表达式，例如：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if(age&gt;12 &amp;&amp; age&lt;20)</span><br><span class="line">printf(&quot;你正式成为青少年&quot;)；</span><br></pre></td></tr></table></figure>
+<p> <strong><strong> &amp;&amp; (逻辑与) </strong></strong></p>
+<ul>
+<li><p><strong><strong>当逻辑与左边为false(假)，则不再进行逻辑与右边的判断，结果为false(假)</strong></strong></p>
+</li>
+<li><p><strong><strong>当逻辑与左边为true(真)则进行右边判断，右边为false(假)，结果为false(假)</strong></strong></p>
+</li>
+<li><p><strong><strong>当逻辑与左边为true(真)则进行右边判断，右边也为true(真)，则结果为true(真)</strong></strong></p>
+</li>
+</ul>
+<p> <strong><strong> 逻辑或运算符||</strong></strong></p>
+<blockquote>
+<p>(逻辑或)运算符||用于两个或多个条件为true的情行。如果运算符||的一个或两个操作数是true,其结果就是true.只有两个操作数都是false,结果才是false.下面是使用这个运算符的例子:</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a=6;</span><br><span class="line">	<span class="keyword">if</span>(a&gt;7 || a&gt;9 || a==7 || a==5 || a==6)</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"printf语句执行了"</span>);</span><br><span class="line">	</span><br><span class="line"> &#125; </span><br><span class="line"> 结果为：<span class="built_in">printf</span>语句执行了</span><br></pre></td></tr></table></figure>
+<p><strong><strong> ||(逻辑或) </strong></strong></p>
+<ul>
+<li><p><strong><strong> 当逻辑或左边为false(假)，继续逻辑或右边的判断，如果也为false(假)，结果为false(假)</strong></strong></p>
+</li>
+<li><p><strong><strong> 当逻辑或左边为false(假)，继续逻辑或右边的判断，如果为true(真)，结果为true(真) </strong></strong></p>
+</li>
+<li><p><strong><strong> 当逻辑或左边为true(真)，则不再进行逻辑或右边的判断，结果为true(真) </strong></strong></p>
+</li>
+</ul>
+<p><strong><strong> 逻辑非运算符！</strong></strong></p>
+<blockquote>
+<p>逻辑非运算符用 “!”表示，他是一元运算符；因为他只有一个操作数。逻辑非运算符转逻辑表达式的值，使用true和false，假设有两个变量a和b，其值分别是5和2，则表达式a&gt;b是true，如果使用逻辑非运算符，表达式!(a&gt;b)就是false，尽量避免使用这个运算符，它会使代码难以理解。</p>
+</blockquote>
+<h3 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h3><blockquote>
+<p>条件运算符根据一个逻辑表达式等于true和false。执行两个表达式中的一个。有时也称为三元运算符，因为他是需要3个操作数的运算符例如： <code>条件？表达式1:表达式2</code> </p>
+</blockquote>
+<p>  <code>x=y&gt;7?25:50；</code><br> 如果y&gt;7,x就设置为25，否则x就设置为50，这是生成这一结果的一种快捷方式：</p>
+<pre><code>if(y&gt;7)
+  x=25;
+else
+  x=50; 
+</code></pre><p><strong><strong> 如下代码 </strong></strong></p>
+<pre><code> #include &lt;stdio.h&gt;
+ int main(void)
+ {
+      int a,b,max；
+      printf(&quot;请输入两个数字&quot;)；
+      scanf(&quot;%d&quot;，&amp;max)；
+      max=a&gt;b?a:b；//当a&gt;b为true,max的值为a。当为false,max的值为b.
+      printf(&quot;max=%d&quot;,max)；
+      return 0；
+}
+
+</code></pre><h3 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">优先级</th>
+<th style="text-align:center">运算符</th>
+<th>结合律</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">后缀运算符：[]    ()    ·    -&gt;    ++    –(类型名称){列表}</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">一元运算符：++    –    !    ~    +    -    *    &amp;    sizeof_Alignof</td>
+<td>从右到左</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">类型转换运算符：(类型名称)</td>
+<td>从右到左</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">乘除法运算符：*    /    %</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">加减法运算符：+    -</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">移位运算符：&lt;&lt;    &gt;&gt;</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">关系运算符：&lt;&lt;=    &gt;&gt;=</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">相等运算符：==    !=</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">位运算符 AND：&amp;</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">位运算符 XOR：^</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">位运算符 OR：</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">逻辑运算符 AND：&amp;&amp;</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center">逻辑运算符 OR：</td>
+<td>从左到右</td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center">条件运算符：?:</td>
+<td>从右到左</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center">赋值运算符：=         +=        -=    * =      /=      %=       &amp;=    ^=  ❘=</td>
+<td>从右到左   </td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center">逗号运算符：，</td>
+<td>从左到右</td>
+</tr>
+</tbody>
+</table>
 
         
     
