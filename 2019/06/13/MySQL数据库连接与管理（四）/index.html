@@ -449,106 +449,23 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="使用Linux连接mysql服务器"><a href="#使用Linux连接mysql服务器" class="headerlink" title="使用Linux连接mysql服务器"></a>使用Linux连接mysql服务器</h2><p>从命令行中本地连接mysql服务器</p>
-<pre><code class="bash">[root@hhost]# mysql -u root -p sh
-</code></pre>
-<p>远程登陆MySQL</p>
-<pre><code class="bash">[root@hhost]# mysql -h 服务器IP -u root
-</code></pre>
+        <h2 id="使用Linux连接mysql服务器"><a href="#使用Linux连接mysql服务器" class="headerlink" title="使用Linux连接mysql服务器"></a>使用Linux连接mysql服务器</h2><p>从命令行中本地连接mysql服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hhost]<span class="comment"># mysql -u root -p sh</span></span><br></pre></td></tr></table></figure></p>
+<p>远程登陆MySQL<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@hhost]<span class="comment"># mysql -h 服务器IP -u root</span></span><br></pre></td></tr></table></figure></p>
 <p>登录成功后会出现 mysql&gt; 命令提示窗口</p>
-<h3 id="显示所有数据库，注意后面的；"><a href="#显示所有数据库，注意后面的；" class="headerlink" title="显示所有数据库，注意后面的；"></a>显示所有数据库，注意后面的；</h3><pre><code class="bash">mysql&gt; show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| test               |
-+--------------------+
-2 rows in set (0.10 sec)
-</code></pre>
-<h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><pre><code class="bash">use 数据库名
-</code></pre>
-<h3 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h3><pre><code class="bash">mysql&gt; show tables;
-+----------------+
-| Tables_in_test |
-+----------------+
-| runoob_tbl     |
-| sys_menu       |
-+----------------+
-2 rows in set (0.00 sec)
-</code></pre>
-<h3 id="查表所有内容"><a href="#查表所有内容" class="headerlink" title="查表所有内容"></a>查表所有内容</h3><pre><code class="bash">select * from  表名;
-</code></pre>
-<h3 id="显示表的属性，属性类型，主键信息-，是否为-NULL，默认值等其他信息"><a href="#显示表的属性，属性类型，主键信息-，是否为-NULL，默认值等其他信息" class="headerlink" title="显示表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息"></a>显示表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息</h3><pre><code class="bash">show columns from 数据表;
-</code></pre>
-<pre><code class="bash">mysql&gt; show columns from runoob_tbl;
-+-----------------+------------------+------+-----+---------+----------------+
-| Field           | Type             | Null | Key | Default | Extra          |
-+-----------------+------------------+------+-----+---------+----------------+
-| runoob_id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
-| runoob_title    | varchar(100)     | NO   |     | NULL    |                |
-| runoob_author   | varchar(40)      | NO   |     | NULL    |                |
-| submission_date | date             | YES  |     | NULL    |                |
-+-----------------+------------------+------+-----+---------+----------------+
-4 rows in set (0.06 sec)
-</code></pre>
-<h3 id="显示数据表的详细索引信息，包括PRIMARY-KEY（主键）。"><a href="#显示数据表的详细索引信息，包括PRIMARY-KEY（主键）。" class="headerlink" title="显示数据表的详细索引信息，包括PRIMARY KEY（主键）。"></a>显示数据表的详细索引信息，包括PRIMARY KEY（主键）。</h3><pre><code class="bash">show index from runoob_tbl;
-</code></pre>
-<pre><code class="bash">mysql&gt; show index from runoob_tbl;
-+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
-| Table      | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |
-+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
-| runoob_tbl |          0 | PRIMARY  |            1 | runoob_id   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |
-+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
-1 row in set (0.00 sec)
-</code></pre>
-<h3 id="显示数据库test中的所有表信息"><a href="#显示数据库test中的所有表信息" class="headerlink" title="显示数据库test中的所有表信息"></a>显示数据库test中的所有表信息</h3><pre><code class="bash">show table status from 库名;
-</code></pre>
-<pre><code class="bash">mysql&gt; show table status from test;
-+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+
-| Name       | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation       | Checksum | Create_options | Comment |
-+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+
-| runoob_tbl | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-05 14:57:14 | NULL        | NULL       | utf8_general_ci |     NULL |                |         |
-| sys_menu   | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-03 09:54:08 | NULL        | NULL       | utf8_general_ci |     NULL |                | 菜单    |
-+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+
-2 rows in set (0.00 sec)
-</code></pre>
-<h3 id="表名以runoob开头的表的信息"><a href="#表名以runoob开头的表的信息" class="headerlink" title="表名以runoob开头的表的信息"></a>表名以runoob开头的表的信息</h3><pre><code class="bash">show table status from 库名 like &#39;表名%&#39;;
-</code></pre>
-<pre><code class="bash">mysql&gt; show table status from test like &#39;runoob%&#39;;
-+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+
-| Name       | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation       | Checksum | Create_options | Comment |
-+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+
-| runoob_tbl | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-05 14:57:14 | NULL        | NULL       | utf8_general_ci |     NULL |                |         |
-+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+
-1 row in set (0.00 sec)
-</code></pre>
-<h3 id="加上-G，查询结果按列打印"><a href="#加上-G，查询结果按列打印" class="headerlink" title="加上 \G，查询结果按列打印"></a>加上 \G，查询结果按列打印</h3><pre><code class="bash">show table status from 库名 like &#39;表名%&#39;\G;
-</code></pre>
-<pre><code class="bash">mysql&gt; show table status from test like &#39;runoob%&#39;\G;
-*************************** 1. row ***************************
-           Name: runoob_tbl
-         Engine: InnoDB
-        Version: 10
-     Row_format: Compact
-           Rows: 0
- Avg_row_length: 0
-    Data_length: 16384
-Max_data_length: 0
-   Index_length: 0
-      Data_free: 0
- Auto_increment: 1
-    Create_time: 2019-06-05 14:57:14
-    Update_time: NULL
-     Check_time: NULL
-      Collation: utf8_general_ci
-       Checksum: NULL
- Create_options: 
-        Comment: 
-1 row in set (0.00 sec)
-
-ERROR: 
-No query specified
-</code></pre>
+<h3 id="显示所有数据库，注意后面的；"><a href="#显示所有数据库，注意后面的；" class="headerlink" title="显示所有数据库，注意后面的；"></a>显示所有数据库，注意后面的；</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show databases;</span><br><span class="line">+--------------------+</span><br><span class="line">| Database           |</span><br><span class="line">+--------------------+</span><br><span class="line">| information_schema |</span><br><span class="line">| <span class="built_in">test</span>               |</span><br><span class="line">+--------------------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.10 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use 数据库名</span><br></pre></td></tr></table></figure>
+<h3 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show tables;</span><br><span class="line">+----------------+</span><br><span class="line">| Tables_in_test |</span><br><span class="line">+----------------+</span><br><span class="line">| runoob_tbl     |</span><br><span class="line">| sys_menu       |</span><br><span class="line">+----------------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="查表所有内容"><a href="#查表所有内容" class="headerlink" title="查表所有内容"></a>查表所有内容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from  表名;</span><br></pre></td></tr></table></figure>
+<h3 id="显示表的属性，属性类型，主键信息-，是否为-NULL，默认值等其他信息"><a href="#显示表的属性，属性类型，主键信息-，是否为-NULL，默认值等其他信息" class="headerlink" title="显示表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息"></a>显示表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show columns from 数据表;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show columns from runoob_tbl;</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">| Field           | Type             | Null | Key | Default | Extra          |</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">| runoob_id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |</span><br><span class="line">| runoob_title    | varchar(100)     | NO   |     | NULL    |                |</span><br><span class="line">| runoob_author   | varchar(40)      | NO   |     | NULL    |                |</span><br><span class="line">| submission_date | date             | YES  |     | NULL    |                |</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">4 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.06 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="显示数据表的详细索引信息，包括PRIMARY-KEY（主键）。"><a href="#显示数据表的详细索引信息，包括PRIMARY-KEY（主键）。" class="headerlink" title="显示数据表的详细索引信息，包括PRIMARY KEY（主键）。"></a>显示数据表的详细索引信息，包括PRIMARY KEY（主键）。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show index from runoob_tbl;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show index from runoob_tbl;</span><br><span class="line">+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+</span><br><span class="line">| Table      | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |</span><br><span class="line">+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+</span><br><span class="line">| runoob_tbl |          0 | PRIMARY  |            1 | runoob_id   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |</span><br><span class="line">+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="显示数据库test中的所有表信息"><a href="#显示数据库test中的所有表信息" class="headerlink" title="显示数据库test中的所有表信息"></a>显示数据库test中的所有表信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show table status from 库名;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show table status from <span class="built_in">test</span>;</span><br><span class="line">+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+</span><br><span class="line">| Name       | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation       | Checksum | Create_options | Comment |</span><br><span class="line">+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+</span><br><span class="line">| runoob_tbl | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-05 14:57:14 | NULL        | NULL       | utf8_general_ci |     NULL |                |         |</span><br><span class="line">| sys_menu   | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-03 09:54:08 | NULL        | NULL       | utf8_general_ci |     NULL |                | 菜单    |</span><br><span class="line">+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+</span><br><span class="line">2 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="表名以runoob开头的表的信息"><a href="#表名以runoob开头的表的信息" class="headerlink" title="表名以runoob开头的表的信息"></a>表名以runoob开头的表的信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show table status from 库名 like <span class="string">'表名%'</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show table status from <span class="built_in">test</span> like <span class="string">'runoob%'</span>;</span><br><span class="line">+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+</span><br><span class="line">| Name       | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation       | Checksum | Create_options | Comment |</span><br><span class="line">+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+</span><br><span class="line">| runoob_tbl | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-05 14:57:14 | NULL        | NULL       | utf8_general_ci |     NULL |                |         |</span><br><span class="line">+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="加上-G，查询结果按列打印"><a href="#加上-G，查询结果按列打印" class="headerlink" title="加上 \G，查询结果按列打印"></a>加上 \G，查询结果按列打印</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show table status from 库名 like <span class="string">'表名%'</span>\G;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show table status from <span class="built_in">test</span> like <span class="string">'runoob%'</span>\G;</span><br><span class="line">*************************** 1. row ***************************</span><br><span class="line">           Name: runoob_tbl</span><br><span class="line">         Engine: InnoDB</span><br><span class="line">        Version: 10</span><br><span class="line">     Row_format: Compact</span><br><span class="line">           Rows: 0</span><br><span class="line"> Avg_row_length: 0</span><br><span class="line">    Data_length: 16384</span><br><span class="line">Max_data_length: 0</span><br><span class="line">   Index_length: 0</span><br><span class="line">      Data_free: 0</span><br><span class="line"> Auto_increment: 1</span><br><span class="line">    Create_time: 2019-06-05 14:57:14</span><br><span class="line">    Update_time: NULL</span><br><span class="line">     Check_time: NULL</span><br><span class="line">      Collation: utf8_general_ci</span><br><span class="line">       Checksum: NULL</span><br><span class="line"> Create_options: </span><br><span class="line">        Comment: </span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br><span class="line"></span><br><span class="line">ERROR: </span><br><span class="line">No query specified</span><br></pre></td></tr></table></figure>
 
         
     
@@ -963,10 +880,6 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
-    
-        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
-    
-
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -977,10 +890,6 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
-    
-        
-        
-        HanabiBrowser.start('pre code',true);
     
 </script>
 

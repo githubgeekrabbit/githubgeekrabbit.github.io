@@ -458,48 +458,28 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h1><h2 id="安装ssh"><a href="#安装ssh" class="headerlink" title="安装ssh"></a>安装ssh</h2><pre><code class="bush">sudo apt install ssh
-</code></pre>
-<h2 id="编辑sshd-config文件"><a href="#编辑sshd-config文件" class="headerlink" title="编辑sshd_config文件"></a>编辑<code>sshd_config</code>文件</h2><pre><code class="bush">sudo vi /etc/ssh/sshd_config
-</code></pre>
-<h2 id="设置允许密码登陆"><a href="#设置允许密码登陆" class="headerlink" title="设置允许密码登陆"></a>设置允许密码登陆</h2><p>将</p>
-<pre><code class="bash">#PasswordAuthentication yes
-`
-</code></pre>
+        <h1 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h1><h2 id="安装ssh"><a href="#安装ssh" class="headerlink" title="安装ssh"></a>安装ssh</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install ssh</span><br></pre></td></tr></table></figure>
+<h2 id="编辑sshd-config文件"><a href="#编辑sshd-config文件" class="headerlink" title="编辑sshd_config文件"></a>编辑<code>sshd_config</code>文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
+<h2 id="设置允许密码登陆"><a href="#设置允许密码登陆" class="headerlink" title="设置允许密码登陆"></a>设置允许密码登陆</h2><p>将<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#PasswordAuthentication yes</span></span><br><span class="line">`</span><br></pre></td></tr></table></figure></p>
 <p>前面的注释符去掉</p>
-<h3 id="设置允许root登陆-不建议"><a href="#设置允许root登陆-不建议" class="headerlink" title="设置允许root登陆(不建议)"></a>设置允许root登陆(不建议)</h3><p>将<code>sshd_config</code>文件中的语句</p>
-<pre><code class="bash">#PermitRootLogin prohibit-password
-</code></pre>
-<p>修改为：</p>
-<pre><code class="bash">PermitRootLogin yes
-</code></pre>
+<h3 id="设置允许root登陆-不建议"><a href="#设置允许root登陆-不建议" class="headerlink" title="设置允许root登陆(不建议)"></a>设置允许root登陆(不建议)</h3><p>将<code>sshd_config</code>文件中的语句<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#PermitRootLogin prohibit-password</span></span><br></pre></td></tr></table></figure></p>
+<p>修改为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure></p>
 <p>并去掉前面的注释符</p>
-<p>保存文件,启动SSH服务</p>
-<pre><code class="bash">sudo systemctl start ssh
-</code></pre>
-<p>或重启ssh服务</p>
-<pre><code class="bash">sudo systemctl restart ssh
-
-</code></pre>
-<h2 id="设置SSH开机自启动"><a href="#设置SSH开机自启动" class="headerlink" title="设置SSH开机自启动"></a>设置SSH开机自启动</h2><pre><code class="bash">sudo systemctl enable ssh
-</code></pre>
-<h1 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h1><p>首先在终端中输入这条命令(以管理员身份)打开源文件： </p>
-<pre><code class="bush">sudo vi /etc/apt/sources.list.d/parrot.list
-</code></pre>
-<p>然后添加源 (我用着两个）</p>
-<pre><code class="bash">deb http://mirrors.ustc.edu.cn/parrot/ parrot main contrib non-free
-deb http://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free
-</code></pre>
+<p>保存文件,启动SSH服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start ssh</span><br></pre></td></tr></table></figure></p>
+<p>或重启ssh服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart ssh</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置SSH开机自启动"><a href="#设置SSH开机自启动" class="headerlink" title="设置SSH开机自启动"></a>设置SSH开机自启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> ssh</span><br></pre></td></tr></table></figure>
+<h1 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h1><p>首先在终端中输入这条命令(以管理员身份)打开源文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/apt/sources.list.d/parrot.list</span><br></pre></td></tr></table></figure></p>
+<p>然后添加源 (我用着两个）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.ustc.edu.cn/parrot/ parrot main contrib non-free</span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free</span><br></pre></td></tr></table></figure></p>
 <p>由于Parrot Security支持的源很多，我们又是在国内，我重点说一下<strong>Parrot Security中国国内的镜像源有哪些？</strong></p>
 <p>1、中国科技大学和USTCLUG</p>
-<pre><code>deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free
-</code></pre><p>2、TUNA（北京清华大学，TUNA协会）</p>
-<pre><code>deb https://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free
-</code></pre><p>3、SHU（上海大学）</p>
-<pre><code>deb https://mirrors.shu.edu.cn/parrot/ parrot main contrib non-free
-</code></pre><p>4、SJTUG（上海交通大学* NIX用户组）</p>
-<pre><code>deb https://mirrors.sjtug.sjtu.edu.cn/parrot/ parrot main contrib non-free
-</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free</span><br></pre></td></tr></table></figure>
+<p>2、TUNA（北京清华大学，TUNA协会）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/parrot/ parrot main contrib non-free</span><br></pre></td></tr></table></figure>
+<p>3、SHU（上海大学）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb https://mirrors.shu.edu.cn/parrot/ parrot main contrib non-free</span><br></pre></td></tr></table></figure>
+<p>4、SJTUG（上海交通大学* NIX用户组）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb https://mirrors.sjtug.sjtu.edu.cn/parrot/ parrot main contrib non-free</span><br></pre></td></tr></table></figure>
+
         
     
 
@@ -913,10 +893,6 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
-    
-        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
-    
-
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -927,10 +903,6 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
-    
-        
-        
-        HanabiBrowser.start('pre code',true);
     
 </script>
 
