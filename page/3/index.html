@@ -367,7 +367,10 @@
         
             一、Kali系统更新源
 
-在终端下使用编辑器打开系统源文本1leaf...
+在终端下使用编辑器打开系统源文本leafpad /etc/apt/sources.list
+
+
+将清华大学源填写进...
         
         &nbsp;&nbsp;&nbsp;
         <span>
@@ -491,7 +494,8 @@
         
             如何将Mad-Metasploit添加到Metasploit框架？
 
-配置你的metasploit-framework目录：12
+配置你的metasploit-framework目录：$ vim config/config.rb
+$ metasploit_path= &#39;/opt/metasploit-framework/embedded/framework/&#39...
         
         &nbsp;&nbsp;&nbsp;
         <span>
@@ -554,7 +558,10 @@
         
             我安装装的时候选的是中文，但是里面却不是中文的，废话不多说开始搞
 一.
-1.然后进入系统1
+1.然后进入系统
+$ sudo dpkg-reconfigure locales
+
+找到zh_CN.UTF-8 UTF-8
         
         &nbsp;&nbsp;&nbsp;
         <span>
@@ -959,6 +966,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -969,6 +980,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 

@@ -457,7 +457,13 @@
 <li>语句 &amp; 表达式</li>
 <li>注释</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">"Hello world ! \n"</span>)；</span><br><span class="line">      <span class="built_in">return</span> 0；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">#include &lt;stdio.h&gt;
+int main(void)
+{
+      printf(&quot;Hello world ! \n&quot;)；
+      return 0；
+}
+</code></pre>
 <p>编译执行后会输出 <a href="https://www.runoob.com/try/runcode.php?filename=helloworld&amp;type=c" target="_blank" rel="noopener">Hello World! </a></p>
 <p>接下来我们讲解一下上面这段程序：</p>
 <blockquote>
@@ -484,8 +490,17 @@
 <blockquote>
 <p>printf(“Hello, World! \n”)；</p>
 </blockquote>
-<p>这五个令牌分别是：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span> </span><br><span class="line">(  </span><br><span class="line"><span class="string">"Hello, World! \n"</span> </span><br><span class="line">) </span><br><span class="line">；</span><br></pre></td></tr></table></figure></p>
-<h2 id="分号-；"><a href="#分号-；" class="headerlink" title="分号 ；"></a>分号 ；</h2><p>在 C 程序中，分号是语句结束符。也就是说，每个语句必须以分号结束，必须用英文的符号。它表明一个逻辑实体的结束。<br>例如，下面是两个不同的语句：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"Hello, World! \n"</span>)；</span><br><span class="line"><span class="built_in">return</span>  0；</span><br></pre></td></tr></table></figure></p>
+<p>这五个令牌分别是：</p>
+<pre><code class="bash">printf 
+(  
+&quot;Hello, World! \n&quot; 
+) 
+；
+</code></pre>
+<h2 id="分号-；"><a href="#分号-；" class="headerlink" title="分号 ；"></a>分号 ；</h2><p>在 C 程序中，分号是语句结束符。也就是说，每个语句必须以分号结束，必须用英文的符号。它表明一个逻辑实体的结束。<br>例如，下面是两个不同的语句：</p>
+<pre><code class="bash">printf(&quot;Hello, World! \n&quot;)；
+return  0；
+</code></pre>
 <h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p><strong>C 语言有两种注释方式：</strong><br>以 // 开始的单行注释，这种注释可以单独占一行。</p>
 <blockquote>
 <p>//单行注释</p>
@@ -1051,6 +1066,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -1061,6 +1080,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 

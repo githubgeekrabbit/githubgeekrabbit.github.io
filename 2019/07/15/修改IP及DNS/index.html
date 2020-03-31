@@ -457,7 +457,29 @@
 </li>
 <li>vim ifcfg-ens33</li>
 </ol>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">TYPE=Ethernet</span><br><span class="line">PROXY_METHOD=none</span><br><span class="line">BROWSER_ONLY=no</span><br><span class="line">BOOTPROTO=none</span><br><span class="line">DEFROUTE=yes</span><br><span class="line">IPV4_FAILURE_FATAL=no</span><br><span class="line">IPV6INIT=yes</span><br><span class="line">IPV6_AUTOCONF=yes</span><br><span class="line">IPV6_DEFROUTE=yes</span><br><span class="line">IPV6_FAILURE_FATAL=no</span><br><span class="line">IPV6_ADDR_GEN_MODE=stable-privacy</span><br><span class="line">NAME=ens33</span><br><span class="line">UUID=c886ea74-29f0-487c-9947-34345f1d3623</span><br><span class="line">DEVICE=ens33</span><br><span class="line"><span class="comment">#设置开机自启</span></span><br><span class="line">ONBOOT=yes</span><br><span class="line"><span class="comment">#配置IP地址信息</span></span><br><span class="line">IPADDR=192.168.100.90</span><br><span class="line">NETMASK=255.255.255.0</span><br><span class="line">GATEWAY=192.168.100.1</span><br><span class="line"><span class="comment">#取消NetworkManager管理</span></span><br><span class="line">NM_CONTROLLED=no</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens33
+UUID=c886ea74-29f0-487c-9947-34345f1d3623
+DEVICE=ens33
+#设置开机自启
+ONBOOT=yes
+#配置IP地址信息
+IPADDR=192.168.100.90
+NETMASK=255.255.255.0
+GATEWAY=192.168.100.1
+#取消NetworkManager管理
+NM_CONTROLLED=no
+</code></pre>
 <h3 id="重启网络服务"><a href="#重启网络服务" class="headerlink" title="重启网络服务"></a>重启网络服务</h3><blockquote>
 <p>systemctl restart network</p>
 </blockquote>
@@ -470,21 +492,37 @@
 <h2 id="修改resolv-conf配置文件"><a href="#修改resolv-conf配置文件" class="headerlink" title="修改resolv.conf配置文件"></a>修改resolv.conf配置文件</h2><blockquote>
 <p>vim /etc/resolv.conf</p>
 </blockquote>
-<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#主DNS服务器</span></span><br><span class="line">nameserver 218.85.157.99</span><br><span class="line"><span class="comment">#备DNS服务器</span></span><br><span class="line">nameserver 114.114.114.114</span><br></pre></td></tr></table></figure>
-<h3 id="重启NetworkManager"><a href="#重启NetworkManager" class="headerlink" title="重启NetworkManager"></a>重启NetworkManager</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart NetworkManager</span><br></pre></td></tr></table></figure>
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><pre><code class="bash">    #主DNS服务器
+    nameserver 218.85.157.99
+    #备DNS服务器
+    nameserver 114.114.114.114 
+</code></pre>
+<h3 id="重启NetworkManager"><a href="#重启NetworkManager" class="headerlink" title="重启NetworkManager"></a>重启NetworkManager</h3><pre><code class="bash">systemctl restart NetworkManager
+</code></pre>
 <h1 id="debian9"><a href="#debian9" class="headerlink" title="debian9"></a>debian9</h1><h3 id="修改IP地址："><a href="#修改IP地址：" class="headerlink" title="修改IP地址："></a>修改IP地址：</h3><ol>
 <li>编辑文件</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/network/interfaces</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">vim /etc/network/interfaces
+</code></pre>
 <ol start="2">
 <li>设置静态IP</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">auto lo</span><br><span class="line">iface lo inet lookback</span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet static <span class="comment">#将网卡eth0设置为获取静态地址</span></span><br><span class="line">address 192.168.1.10 <span class="comment">#替换为自己的IP地址</span></span><br><span class="line">netmask 255.255.255.0 <span class="comment">#替换为自己的子网掩码</span></span><br><span class="line">gateway 192.168.1.1 <span class="comment">#替换为自己的网关地址</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">auto lo
+iface lo inet lookback
+auto eth0
+iface eth0 inet static #将网卡eth0设置为获取静态地址
+address 192.168.1.10 #替换为自己的IP地址
+netmask 255.255.255.0 #替换为自己的子网掩码
+gateway 192.168.1.1 #替换为自己的网关地址
+</code></pre>
 <ol start="3">
 <li>设置为DHCP自动获取IP</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto lo</span><br><span class="line">iface lo inet loopback</span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet dhcp #将网卡eth0设置为自动获取IP</span><br></pre></td></tr></table></figure>
-<ol start="4">
+<pre><code>auto lo
+iface lo inet loopback
+auto eth0
+iface eth0 inet dhcp #将网卡eth0设置为自动获取IP
+</code></pre><ol start="4">
 <li>重启网卡服务</li>
 </ol>
 <p>debian8</p>
@@ -492,14 +530,13 @@
 <p>debian9</p>
 <p><code>service networking restart</code></p>
 <h3 id="修改DNS"><a href="#修改DNS" class="headerlink" title="修改DNS"></a>修改DNS</h3><ol>
-<li><p>编辑文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/resolv.conf</span><br></pre></td></tr></table></figure>
+<li>编辑文件<pre><code class="bash">vim /etc/resolv.conf
+</code></pre>
 </li>
-<li><p>添加DNS</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nameserver 114.114.114.114 <span class="comment">#替换为自己的DNS服务器地址</span></span><br></pre></td></tr></table></figure>
+<li>添加DNS<pre><code class="bash">nameserver 114.114.114.114 #替换为自己的DNS服务器地址
+</code></pre>
 </li>
-<li><p>查询IP及测试网络连通 </p>
-</li>
+<li>查询IP及测试网络连通 </li>
 </ol>
 <blockquote>
 <p>debian8<br><code>ifconfig</code></p>
@@ -509,7 +546,10 @@
 </blockquote>
 <p>2.测试网络连通<br><code>ping www.baidu.com</code></p>
 <h1 id="ubuntu16-04"><a href="#ubuntu16-04" class="headerlink" title="ubuntu16.04"></a>ubuntu16.04</h1><h3 id="修改IP地址"><a href="#修改IP地址" class="headerlink" title="修改IP地址"></a>修改IP地址</h3><ol>
-<li><p>编辑文件<figure class="highlight plain"><figcaption><span>vim</span><a href="/etc/network/interfaces```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2.  ```bash  </span><br><span class="line">    auto eth0 #要设置的网卡</span><br><span class="line">    iface eth0 inet static #设置静态IP；如果是使用自动IP用dhcp，后面的不用设置，一般少用</span><br></pre></td></tr></table></figure></p>
+<li>编辑文件<code>sudo vim /etc/network/interfaces</code></li>
+<li><pre><code class="bash">auto eth0 #要设置的网卡
+iface eth0 inet static #设置静态IP；如果是使用自动IP用dhcp，后面的不用设置，一般少用
+</code></pre>
 </li>
 <li><p> addressxxx.xxx.xxx.xxx #IP地址</p>
 <p> netmaskxxx.xxx.xxx.xxx #子网掩码</p>
@@ -517,7 +557,17 @@
 </li>
 </ol>
 <h3 id="修改DNS-1"><a href="#修改DNS-1" class="headerlink" title="修改DNS"></a>修改DNS</h3><ol>
-<li>编辑<figure class="highlight plain"><figcaption><span>vim</span><a href="/etc/resolv.conf">```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">*上面设置的文件重启后会覆盖，如果要持久的保存，需要修改：/etc/resolvconf/resolv.conf.d/base*</span><br><span class="line">3. </span><br><span class="line">    nameserver 172.16.3.4 #希望修改成的DNS</span><br><span class="line">    nameserver 172.16.3.3 #希望修改成的DNS</span><br><span class="line">    </span><br><span class="line">4. 先运行一次，然后在rc.local里加入这个重启网络配置的命令：</span><br><span class="line">```bash</span><br><span class="line">    sudo /etc/init.d/networking restart #使网卡配置生效</span><br><span class="line">    sudo /etc/init.d/resolvconf restart #使DNS生效</span><br></pre></td></tr></table></figure></li>
+<li>编辑<code>sudo vim /etc/resolv.conf</code></li>
+</ol>
+<p><em>上面设置的文件重启后会覆盖，如果要持久的保存，需要修改：/etc/resolvconf/resolv.conf.d/base</em></p>
+<ol start="3">
+<li><p> nameserver 172.16.3.4 #希望修改成的DNS<br> nameserver 172.16.3.3 #希望修改成的DNS</p>
+</li>
+<li><p>先运行一次，然后在rc.local里加入这个重启网络配置的命令：</p>
+<pre><code class="bash"> sudo /etc/init.d/networking restart #使网卡配置生效
+ sudo /etc/init.d/resolvconf restart #使DNS生效
+</code></pre>
+</li>
 </ol>
 
         
@@ -933,6 +983,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -943,6 +997,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 

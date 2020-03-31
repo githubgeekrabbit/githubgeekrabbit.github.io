@@ -454,18 +454,40 @@
 <li>表字段名</li>
 <li>定义每个表字段</li>
 </ul>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name (column_name column_type);</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">root@host<span class="comment"># mysql -u root -p  Enter password:******* mysql&gt;  use RUNOOB;  Database changed</span></span><br><span class="line">mysql&gt; CREATE TABLE runoob_tbl(  </span><br><span class="line">-&gt; runoob_id INT NOT NULL AUTO_INCREMENT,  </span><br><span class="line">-&gt; runoob_title VARCHAR(100) NOT NULL,  </span><br><span class="line">-&gt; runoob_author VARCHAR(40)NOT NULL,  </span><br><span class="line">-&gt; submission_date DATE, </span><br><span class="line">-&gt; PRIMARY KEY( runoob_id )  </span><br><span class="line">-&gt;  )ENGINE=InnoDB DEFAULT</span><br><span class="line">CHARSET=utf8;  Query OK,  0 rows affected (0.16 sec)</span><br></pre></td></tr></table></figure>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><pre><code class="bash">CREATE TABLE table_name (column_name column_type);
+</code></pre>
+<pre><code class="bash">root@host# mysql -u root -p  Enter password:******* mysql&gt;  use RUNOOB;  Database changed
+mysql&gt; CREATE TABLE runoob_tbl(  
+-&gt; runoob_id INT NOT NULL AUTO_INCREMENT,  
+-&gt; runoob_title VARCHAR(100) NOT NULL,  
+-&gt; runoob_author VARCHAR(40)NOT NULL,  
+-&gt; submission_date DATE, 
+-&gt; PRIMARY KEY( runoob_id )  
+-&gt;  )ENGINE=InnoDB DEFAULT
+CHARSET=utf8;  Query OK,  0 rows affected (0.16 sec)
+</code></pre>
 <p>将在 RUNOOB 数据库中创建数据表runoob_tbl：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE IF NOT EXISTS `runoob_tbl`( </span><br><span class="line">`runoob_id` INT UNSIGNED AUTO_INCREMENT,</span><br><span class="line">`runoob_title` VARCHAR(100) NOT NULL, </span><br><span class="line">`runoob_author` VARCHAR(40) NOT NULL,</span><br><span class="line">`submission_date` DATE, PRIMARY KEY (  `runoob_id`</span><br><span class="line">)  )ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">CREATE TABLE IF NOT EXISTS `runoob_tbl`( 
+`runoob_id` INT UNSIGNED AUTO_INCREMENT,
+`runoob_title` VARCHAR(100) NOT NULL, 
+`runoob_author` VARCHAR(40) NOT NULL,
+`submission_date` DATE, PRIMARY KEY (  `runoob_id`
+)  )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+</code></pre>
 <ul>
 <li>如果不想字段为 <strong>NULL</strong> 可以设置字段的属性为 <strong>NOT NULL</strong>， 在操作数据库时如果输入该字段的数据为<strong>NULL</strong> ，就会报错。</li>
 <li>AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。</li>
 <li>PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。</li>
 <li>ENGINE 设置存储引擎，CHARSET 设置编码。</li>
 </ul>
-<h2 id="MySQL-删除数据表"><a href="#MySQL-删除数据表" class="headerlink" title="MySQL 删除数据表"></a>MySQL 删除数据表</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE 表名 ;</span><br></pre></td></tr></table></figure>
-<p>删除了数据表runoob_tbl:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@host<span class="comment"># mysql -u root -p  Enter password:******* </span></span><br><span class="line">mysql&gt;  use RUNOOB;  Database changed</span><br><span class="line">mysql&gt; DROP TABLE runoob_tbl Query OK,  0 rows</span><br><span class="line">affected (0.8 sec)</span><br></pre></td></tr></table></figure></p>
+<h2 id="MySQL-删除数据表"><a href="#MySQL-删除数据表" class="headerlink" title="MySQL 删除数据表"></a>MySQL 删除数据表</h2><pre><code class="bash">DROP TABLE 表名 ;
+</code></pre>
+<p>删除了数据表runoob_tbl:</p>
+<pre><code class="bash">root@host# mysql -u root -p  Enter password:******* 
+mysql&gt;  use RUNOOB;  Database changed
+mysql&gt; DROP TABLE runoob_tbl Query OK,  0 rows
+affected (0.8 sec)
+</code></pre>
 
         
     
@@ -880,6 +902,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -890,6 +916,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 
