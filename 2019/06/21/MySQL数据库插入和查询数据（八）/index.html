@@ -449,9 +449,33 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="MySQL-插入数据"><a href="#MySQL-插入数据" class="headerlink" title="MySQL 插入数据"></a>MySQL 插入数据</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO table_name ( field1, field2,...fieldN ) VALUES ( value1, value2,...valueN );</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; show columns from runoob_tbl;</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">| Field           | Type             | Null | Key | Default | Extra          |</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br><span class="line">| runoob_id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |</span><br><span class="line">| runoob_title    | varchar(100)     | NO   |     | NULL    |                |</span><br><span class="line">| runoob_author   | varchar(40)      | NO   |     | NULL    |                |</span><br><span class="line">| submission_date | date             | YES  |     | NULL    |                |</span><br><span class="line">+-----------------+------------------+------+-----+---------+----------------+</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; insert into runoob_tbl</span><br><span class="line">    -&gt; (runoob_title, runoob_author, submission_date)</span><br><span class="line">    -&gt; values</span><br><span class="line">    -&gt; (<span class="string">"学习 mysql"</span>, <span class="string">"好简单"</span>, NOW());</span><br><span class="line">Query OK, 1 row affected, 1 warning (0.13 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; select *  from  runoob_tbl</span><br><span class="line">    -&gt; ;</span><br><span class="line">+-----------+--------------+---------------+-----------------+</span><br><span class="line">| runoob_id | runoob_title | runoob_author | submission_date |</span><br><span class="line">+-----------+--------------+---------------+-----------------+</span><br><span class="line">|         2 | 学习 mysql   | 好简单        | 2019-06-21      |</span><br><span class="line">+-----------+--------------+---------------+-----------------+</span><br></pre></td></tr></table></figure>
+        <h2 id="MySQL-插入数据"><a href="#MySQL-插入数据" class="headerlink" title="MySQL 插入数据"></a>MySQL 插入数据</h2><pre><code class="bash">INSERT INTO table_name ( field1, field2,...fieldN ) VALUES ( value1, value2,...valueN );
+</code></pre>
+<pre><code class="bash">mysql&gt; show columns from runoob_tbl;
++-----------------+------------------+------+-----+---------+----------------+
+| Field           | Type             | Null | Key | Default | Extra          |
++-----------------+------------------+------+-----+---------+----------------+
+| runoob_id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| runoob_title    | varchar(100)     | NO   |     | NULL    |                |
+| runoob_author   | varchar(40)      | NO   |     | NULL    |                |
+| submission_date | date             | YES  |     | NULL    |                |
++-----------------+------------------+------+-----+---------+----------------+
+</code></pre>
+<pre><code class="bash">mysql&gt; insert into runoob_tbl
+    -&gt; (runoob_title, runoob_author, submission_date)
+    -&gt; values
+    -&gt; (&quot;学习 mysql&quot;, &quot;好简单&quot;, NOW());
+Query OK, 1 row affected, 1 warning (0.13 sec)
+
+mysql&gt; select *  from  runoob_tbl
+    -&gt; ;
++-----------+--------------+---------------+-----------------+
+| runoob_id | runoob_title | runoob_author | submission_date |
++-----------+--------------+---------------+-----------------+
+|         2 | 学习 mysql   | 好简单        | 2019-06-21      |
++-----------+--------------+---------------+-----------------+
+
+</code></pre>
 
         
     
@@ -866,6 +890,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -876,6 +904,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 

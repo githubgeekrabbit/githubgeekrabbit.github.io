@@ -475,23 +475,22 @@
 </li>
 <li><p>接着将盒子的盒子电源接通，通电开始跑码，如果没有跑码，注意：就将5、6接口上的线调换位置，如果还是无法跑码，就将接线顺序整体调换，意思就是整体反转过来重新接，线的顺序也要按照上述重新排序；**</p>
 </li>
-<li><p>成功跑码后开始输入代码，直接复制下述代码到“PUTTY”中，每输入一行按一下回车；</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">start adbd </span><br><span class="line">注释：打开adb**</span><br></pre></td></tr></table></figure>
+<li>成功跑码后开始输入代码，直接复制下述代码到“PUTTY”中，每输入一行按一下回车；<pre><code class="bash">start adbd 
+注释：打开adb**
+</code></pre>
 </li>
-<li><p>查看U盘路径<br><img src="https://i.loli.net/2019/08/24/S7WGMtpjrEDTyc8.png" alt=""></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df</span><br></pre></td></tr></table></figure>
+<li>查看U盘路径<br><img src="https://i.loli.net/2019/08/24/S7WGMtpjrEDTyc8.png" alt=""><pre><code class="bash">df
+</code></pre>
 </li>
-<li><p>红线标出的就是U盘路径<br><img src="https://i.loli.net/2019/08/24/Aq3E1rXCFMyBYnx.png" alt=""><br><strong>注：红线标出的U盘路径可能与你输入df后的不相符，要以当前设备的路径为准，至于如何查看，可以从U盘大小看出来，比如上图中sda1后面的数字，U盘是3.8G。</strong></p>
-</li>
-<li>进入u盘 ,复制当贝市场和当贝桌面到盒子应用中<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp dangbei1.apk /data/app</span><br><span class="line">cp dangbei2.apk /data/app</span><br></pre></td></tr></table></figure>
-</li>
+<li>红线标出的就是U盘路径<br><img src="https://i.loli.net/2019/08/24/Aq3E1rXCFMyBYnx.png" alt=""><br><strong>注：红线标出的U盘路径可能与你输入df后的不相符，要以当前设备的路径为准，至于如何查看，可以从U盘大小看出来，比如上图中sda1后面的数字，U盘是3.8G。</strong></li>
+<li>进入u盘 ,复制当贝市场和当贝桌面到盒子应用中<pre><code class="bash">cp dangbei1.apk /data/app
+cp dangbei2.apk /data/app
+</code></pre>
+<img src="https://i.loli.net/2019/08/24/AU61NT4DMvGiOeP.png" alt=""></li>
+<li>启动当贝桌面<pre><code class="bash">am start com.dangbei.tvlauncher 
+</code></pre>
+<strong>ok，至此当贝市场和当贝桌面就安装成功了</strong></li>
 </ol>
-<p><img src="https://i.loli.net/2019/08/24/AU61NT4DMvGiOeP.png" alt=""></p>
-<ol start="10">
-<li>启动当贝桌面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">am start com.dangbei.tvlauncher</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p><strong>ok，至此当贝市场和当贝桌面就安装成功了</strong></p>
 
         
     
@@ -906,6 +905,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -916,6 +919,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 

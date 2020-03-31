@@ -442,10 +442,13 @@
     
         <p>我安装装的时候选的是中文，但是里面却不是中文的，废话不多说开始搞</p>
 <p>一.</p>
-<p>1.然后进入系统<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dpkg-reconfigure locales</span><br></pre></td></tr></table></figure></p>
+<p>1.然后进入系统</p>
+<pre><code class="bash">$ sudo dpkg-reconfigure locales
+</code></pre>
 <p>找到zh_CN.UTF-8 UTF-8<br><img src="https://i.loli.net/2019/04/26/5cc2d7e2eb463.png" alt=""><br>2.空格选中,然后回车<br>上下光标选中zh_CN.UTF-8 然后tab选择确定,回车</p>
 <p><img src="https://i.loli.net/2019/04/26/5cc2d8d11c1c2.png" alt=""><br>到这里区域设置就完成了</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt updateapt upgradereboot</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">$ apt updateapt upgradereboot
+</code></pre>
 <p><img src="https://i.loli.net/2019/04/27/5cc3ab851d9a7.png" alt=""><br>如果你不是这样的。。不要担心，说不定哪次更新之后就成这样了。。</p>
 
         
@@ -853,6 +856,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -863,6 +870,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 

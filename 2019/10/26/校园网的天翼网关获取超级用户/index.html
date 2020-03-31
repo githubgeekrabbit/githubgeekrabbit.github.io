@@ -456,12 +456,25 @@
 <li><p>打开后找到关键信息</p>
 </li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"baseinfoSet_TELECOMACCOUNT"</span>:<span class="string">"telecomadmin"</span>,</span><br><span class="line">	   <span class="string">"baseinfoSet_TELECOMPASSWORD"</span>:<span class="string">"114&amp;73&amp;55&amp;110&amp;69&amp;37&amp;53&amp;113&amp;"</span>,</span><br><span class="line">	   <span class="string">"baseinfoSet_USERACCOUNT"</span>:<span class="string">"useradmin"</span>,</span><br><span class="line">	   <span class="string">"baseinfoSet_USERPASSWORD"</span>:<span class="string">"106&amp;110&amp;117&amp;122&amp;50&amp;"</span>,</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">&quot;baseinfoSet_TELECOMACCOUNT&quot;:&quot;telecomadmin&quot;,
+       &quot;baseinfoSet_TELECOMPASSWORD&quot;:&quot;114&amp;73&amp;55&amp;110&amp;69&amp;37&amp;53&amp;113&amp;&quot;,
+       &quot;baseinfoSet_USERACCOUNT&quot;:&quot;useradmin&quot;,
+       &quot;baseinfoSet_USERPASSWORD&quot;:&quot;106&amp;110&amp;117&amp;122&amp;50&amp;&quot;,
+
+</code></pre>
 <p><img src="https://i.loli.net/2019/10/26/u2rhSWvPXs3ziqc.png" alt=""></p>
 <ol start="3">
 <li>通过观察9CD2H与57&amp;71&amp;72&amp;50&amp;76&amp;的对应关系（ASCII码），进行解码，如下所示：</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">code=<span class="string">'114&amp;73&amp;55&amp;110&amp;69&amp;37&amp;53&amp;113&amp;'</span>[:-1] <span class="comment"># "baseinfoSet_TELECOMPASSWORD":"114&amp;73&amp;55&amp;110&amp;69&amp;37&amp;53&amp;113&amp;"</span></span><br><span class="line">    list=map(int,code.split(<span class="string">'&amp;'</span>))</span><br><span class="line">    result=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> list:</span><br><span class="line">    <span class="keyword">if</span> i &gt; 57:</span><br><span class="line">    i-=4</span><br><span class="line">    result.append(chr(i))</span><br><span class="line">    <span class="built_in">print</span> (<span class="string">''</span>.join(result)) <span class="comment"># output password:nE7jA%5m</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">code=&#39;114&amp;73&amp;55&amp;110&amp;69&amp;37&amp;53&amp;113&amp;&#39;[:-1] # &quot;baseinfoSet_TELECOMPASSWORD&quot;:&quot;114&amp;73&amp;55&amp;110&amp;69&amp;37&amp;53&amp;113&amp;&quot;
+    list=map(int,code.split(&#39;&amp;&#39;))
+    result=[]
+    for i in list:
+    if i &gt; 57:
+    i-=4
+    result.append(chr(i))
+    print (&#39;&#39;.join(result)) # output password:nE7jA%5m
+</code></pre>
 <p>找个python的线上编辑器，运行上述代码，得到默认密码nE7jA%5m</p>
 <ol start="4">
 <li>输入超级管理员账号：telecomadmin 密码： nE7jA%5m 登陆成功</li>
@@ -880,6 +893,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -890,6 +907,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 
