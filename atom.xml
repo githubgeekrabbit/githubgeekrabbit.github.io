@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekrabbit.club/"/>
-  <updated>2020-05-11T00:56:34.864Z</updated>
+  <updated>2020-05-17T10:54:29.969Z</updated>
   <id>https://geekrabbit.club/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无法创建映射网络驱动器解决方法</title>
+    <link href="https://geekrabbit.club/2020/05/17/%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E6%98%A0%E5%B0%84%E7%BD%91%E7%BB%9C%E9%A9%B1%E5%8A%A8%E5%99%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://geekrabbit.club/2020/05/17/无法创建映射网络驱动器解决方法/</id>
+    <published>2020-05-17T10:29:07.000Z</published>
+    <updated>2020-05-17T10:54:29.969Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今天搭建好网盘开启webdav服务后，在自己电脑上添加一个网络硬盘时，磁盘映射的时候，提示“无法创建映射网络驱动器：连到系统上的设备没有发挥作用”</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><ul><li>需要修改注册表 <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters，把BasicAuthLevel 值改成2</code></li><li>使用管理员身份重启webclient服务：<pre><code>net stop webclient   //停止net start webclient  //启动</code></pre></li></ul><p><img src="/2020/05/17/无法创建映射网络驱动器解决方法/20200517065346940.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;今天搭建好网盘开启webdav服务后，在自己电脑上添加一个网络硬盘时，磁盘映射的时候，提示“无法创建映射网络驱动器：连到系统上的设备没有发挥
+      
+    
+    </summary>
+    
+      <category term="遇到的问题和解决方法" scheme="https://geekrabbit.club/categories/%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>第三章 多项选择问题（二）</title>
@@ -460,30 +483,6 @@
     </summary>
     
       <category term="MySQL数据库学习" scheme="https://geekrabbit.club/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>中兴光猫修改mac和sn</title>
-    <link href="https://geekrabbit.club/2019/05/17/%E4%B8%AD%E5%85%B4%E5%85%89%E7%8C%AB%E4%BF%AE%E6%94%B9mac%E5%92%8Csn/"/>
-    <id>https://geekrabbit.club/2019/05/17/中兴光猫修改mac和sn/</id>
-    <published>2019-05-17T11:39:43.000Z</published>
-    <updated>2019-05-17T11:44:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>我们更换光猫的时候因为loid不同不能入网；本经验教程将教大家如何修改中兴光猫F620的loid与mac地址这类的信息； 废话不多说</p><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul><li>中兴光猫F620</li><li>网线</li><li>电脑<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3>1.电脑通过网线连接光猫的LAN口任意一端口；电脑ip设置为自动获取ip地址；<br>2.电脑上我们找到计算机上的windows键盘，使用<strong>win+R</strong>的按键组合来打开运行；在运行输入框内输入<strong>CMD</strong><br>3.进入路由器 telnet 192.168.1.1 用户名密码:root   Zte521<br>4.修改SN: setmac 1 2177 xxxxxxxx [SN为8字符]</li></ul><p>修改设备标识: setmac 1 512 xxxxxxxxxxxxxxxxx [设备标识位17位字符]<br>修改MAC地址:setmac 1 256 00:00:00:00:00:00<br>setmac 1 257 00:00:00:00:00:00<br>setmac 1 258 00:00:00:00:00:00<br>setmac 1 259 00:00:00:00:00:00<br>setmac 1 260 00:00:00:00:00:00<br>以上命令输入 setmac 2 xxx 为查看（此处xxx为编码的ID号如256、512、2177）。( e3 z0 R1 n3 o<br>需要注意的是，SN和设备标识一定要输入大写字母，mac输入小写字母，我在这里浪费好多功夫，大意了（因为SN和设备标识用setmac 2 xxx命令查询出来不是明文，是unicode 16进制编码！！！）。。。还有就是mac其实一直到262都还有，不过其实一般来说itms验证只绑定设备标识，虽说我是SN、设备标识、mac全都改了。。。另外，还给个福利，SN号其实有两个，2177是8位，还有个2178是9位，前面有个大写的G，就跟包装盒和设备上面条码印的一样。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;我们更换光猫的时候因为loid不同不能入网；本经验教程将教大家如何修改中兴光猫F620的loid与mac地址这类的信息； 废话不多说&lt;/p&gt;
-&lt;h3 id=&quot;工具&quot;&gt;&lt;a href=&quot;#工具&quot; class=&quot;headerlink&quot; title=&quot;工具&quot;&gt;&lt;/a&gt;工具&lt;/h3
-      
-    
-    </summary>
-    
-      <category term="搞机笔记" scheme="https://geekrabbit.club/categories/%E6%90%9E%E6%9C%BA%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
