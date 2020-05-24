@@ -55,7 +55,7 @@
     
     <title>
         
-            按位运算符 | 
+            第三章 按位运算符(三) | 
         
         geekrabbit
     </title>
@@ -66,7 +66,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",C语言">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -239,14 +239,14 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://geekrabbit.club/2020/05/20/按位运算符/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="按位运算符 | geekrabbit">
+    <meta property="og:title" content="第三章 按位运算符(三) | geekrabbit">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="C语言"> 
 
     
         <meta property="article:published_time" content="Wed May 20 2020 22:30:25 GMT+0800">
-        <meta property="article:modified_time" content="Wed May 20 2020 22:30:25 GMT+0800">
+        <meta property="article:modified_time" content="Sun May 24 2020 17:35:41 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -329,6 +329,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#按位运算符"><span class="post-toc-number">1.</span> <span class="post-toc-text">按位运算符</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#按位与运算符"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">按位与运算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#按位或运算符"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">按位或运算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#按位异或运算符"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">按位异或运算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#按位非运算符"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">按位非运算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#按位左移运算符"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">按位左移运算符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#按位右移运算符"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">按位右移运算符</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#按位运算符的op-用法"><span class="post-toc-number">2.</span> <span class="post-toc-text">按位运算符的op=用法</span></a></li></ol>
+    </ul>
+    
 
 
 
@@ -358,7 +367,7 @@
         
     
             <p class="article-headline-p">
-                按位运算符
+                第三章 按位运算符(三)
             </p>
         </div>
 
@@ -395,6 +404,15 @@
 
     <!-- Tags (bookmark) -->
     
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/C语言/">C语言</a>
+    </ul>
+    
 
     <!-- Share -->
     
@@ -407,7 +425,7 @@
     <!-- Leancloud Views -->
         <a class="post_share-link" href="#">
             <li class="mdl-menu__item">
-                <span id="/2020/05/20/按位运算符/" class="leancloud-views_num" data-flag-title="按位运算符">
+                <span id="/2020/05/20/按位运算符/" class="leancloud-views_num" data-flag-title="第三章 按位运算符(三)">
      &nbsp;浏览量
 </span>
 
@@ -419,7 +437,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=按位运算符&url=https://geekrabbit.club/2020/05/20/按位运算符/index.html&pic=https://geekrabbit.club/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=第三章 按位运算符(三)&url=https://geekrabbit.club/2020/05/20/按位运算符/index.html&pic=https://geekrabbit.club/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -428,7 +446,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=按位运算符&url=https://geekrabbit.club/2020/05/20/按位运算符/index.html&via=geekrabbit" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=第三章 按位运算符(三)&url=https://geekrabbit.club/2020/05/20/按位运算符/index.html&via=geekrabbit" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -471,7 +489,176 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h2 id="按位运算符"><a href="#按位运算符" class="headerlink" title="按位运算符"></a>按位运算符</h2><blockquote>
+<p>按位运算符有6个如下表：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>按位与运算符</td>
+</tr>
+<tr>
+<td>｜</td>
+<td>按位或运算符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>按位异或(EOR)运算符</td>
+</tr>
+<tr>
+<td>~</td>
+<td>按位非运算符，也成为1的补位运算符</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>按位左运算符</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>按位右运算符</td>
+</tr>
+</tbody>
+</table>
+<p><strong><strong> 这些运算符只能用与整数类型。~运算符是一元运算符，只处理一个操作数，其他的都是二元运算符 </strong></strong></p>
+<h3 id="按位与运算符"><a href="#按位与运算符" class="headerlink" title="按位与运算符"></a>按位与运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p>
+<pre><code>A = 0011 1100
+
+B = 0000 1101
+</code></pre><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>按位与操作，按二进制位进行”与”运算。运算规则：<code>0&amp;0=0;  0&amp;1=0;  1&amp;0=0;  1&amp;1=1;</code></td>
+<td>(A &amp; B) 将得到 12，即为 <code>00001100</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="按位或运算符"><a href="#按位或运算符" class="headerlink" title="按位或运算符"></a>按位或运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p>
+<pre><code>A = 0011 1100
+
+B = 0000 1101
+</code></pre><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>｜</td>
+<td>按位或运算符，按二进制位进行”或”运算。运算规则：<code>0｜0=0;  0｜1=1;  1｜0=1;  1｜1=1;</code></td>
+<td>(A ｜ B) 将得到 61，即为 <code>00111101</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="按位异或运算符"><a href="#按位异或运算符" class="headerlink" title="按位异或运算符"></a>按位异或运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p>
+<pre><code>A = 0011 1100
+
+B = 0000 1101
+</code></pre><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>异或运算符，按二进制位进行”异或”运算。运算规则：<code>0^0=0;  0^1=1;  1^0=1;  1^1=0;</code></td>
+<td>(A ^ B) 将得到 61，即为 <code>00110001</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="按位非运算符"><a href="#按位非运算符" class="headerlink" title="按位非运算符"></a>按位非运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p>
+<pre><code>A = 0011 1100
+
+B = 0000 1101
+</code></pre><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>~</td>
+<td>取反运算符，按二进制位进行”取反”运算。运算规则：~1=0;  ~0=1;</td>
+<td>(~A ) 将得到 -61，即为 <code>11000011</code>，一个有符号二进制数的补码形式。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="按位左移运算符"><a href="#按位左移运算符" class="headerlink" title="按位左移运算符"></a>按位左移运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p>
+<pre><code>A = 0011 1100
+
+B = 0000 1101
+</code></pre><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;&lt;</td>
+<td>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）。</td>
+<td>A &lt;&lt; 2 将得到 240，即为 <code>11110000</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="按位右移运算符"><a href="#按位右移运算符" class="headerlink" title="按位右移运算符"></a>按位右移运算符</h3><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;&gt;</td>
+<td>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃。</td>
+<td>A &gt;&gt; 2 将得到 15，即为 00001111</td>
+</tr>
+</tbody>
+</table>
+<h2 id="按位运算符的op-用法"><a href="#按位运算符的op-用法" class="headerlink" title="按位运算符的op=用法"></a>按位运算符的op=用法</h2><blockquote>
+<p>所有的二元按位运算符都可以在op=形式的赋值语句中使用，用~运算符例外，他是一元运算符例如：</p>
+</blockquote>
+<pre><code>1hs op=rhs;
+</code></pre><p>等价于</p>
+<pre><code>1hs=1hs op (rhs);
+</code></pre><p>例如：</p>
+<pre><code>value &lt;&lt;=4;
+</code></pre><p>其作用是将整数变量value的内容向左移动四位。等效于：</p>
+<pre><code>value = value &lt;&lt; 4;
+</code></pre><p>二元运算符可以这样使用。例如：</p>
+<pre><code>value &amp;=0xFF;
+</code></pre><p>其中value是一个整数变量，就等价于：</p>
+<pre><code>value = value&amp; 0xFF;
+</code></pre><p>其作用是使最右边的8位保持不变，其他的位置都设为0</p>
+
         
     
 
@@ -632,7 +819,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/C语言学习/">C语言学习<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/DDOS攻防学习/">DDOS攻防学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MySQL数据库学习/">MySQL数据库学习<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/kali/">kali<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux学习/">linux学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux遇到的问题/">linux遇到的问题<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/搞机笔记/">搞机笔记<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/硬件/">硬件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/遇到的问题和解决方法/">遇到的问题和解决方法<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/C语言学习/">C语言学习<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/DDOS攻防学习/">DDOS攻防学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/MySQL数据库学习/">MySQL数据库学习<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/categories/kali/">kali<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux学习/">linux学习<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/linux遇到的问题/">linux遇到的问题<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/学习笔记/">学习笔记<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/搞机笔记/">搞机笔记<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/硬件/">硬件<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/遇到的问题和解决方法/">遇到的问题和解决方法<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
