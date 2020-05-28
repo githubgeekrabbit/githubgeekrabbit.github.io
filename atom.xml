@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekrabbit.club/"/>
-  <updated>2020-05-24T09:35:41.889Z</updated>
+  <updated>2020-05-28T14:55:45.777Z</updated>
   <id>https://geekrabbit.club/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>远程桌面连接提示要求的函数不受支持</title>
+    <link href="https://geekrabbit.club/2020/05/28/%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%BF%9E%E6%8E%A5%E6%8F%90%E7%A4%BA%E8%A6%81%E6%B1%82%E7%9A%84%E5%87%BD%E6%95%B0%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%81/"/>
+    <id>https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/</id>
+    <published>2020-05-28T14:15:40.000Z</published>
+    <updated>2020-05-28T14:55:45.777Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="win10远程桌面出现身份验证错误"><a href="#win10远程桌面出现身份验证错误" class="headerlink" title="win10远程桌面出现身份验证错误"></a>win10远程桌面出现身份验证错误</h2><p><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528103044008.png" alt=""></p><blockquote><p>提示“出现身份验证错误。要求的函数不受支持。可能由于CredSSP 加密 Oracle 修正”。</p></blockquote><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ul><li>在桌面使用 <code>Win + R</code> 组合键调出 <code>运行</code> 窗口，并输入 <code>regedit</code> （注册表编辑器）后回车；<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528103848595.png" alt=""></li><li>在注册表编辑器的左侧栏中依次逐层找到路径<br>提示：如果你展开到 <code>System</code> 后，发现没有 <code>CredSSP</code> 这个项，请您执行以下两步：</li></ul><ol><li>在 <code>System</code> 上 <code>右键 -&gt; 新建 -&gt; 项</code>，将新建的项更名为 <code>CredSSP</code>； </li><li>在 <code>CredSSP</code> 上 <code>右键 -&gt; 新建 -&gt; 项</code>，将新建的项更名为 <code>Parameters</code>； </li><li>在 <code>Parameters</code> 上 <code>右键 -&gt; 新建 -&gt; DWORD (32位)值</code>，将新建的值名称改为 <code>AllowEncryptionOracle</code>，完成后双击该名称（若您现在已存在，直接双击即可），将弹出一个对话框：</li></ol><pre><code>计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters</code></pre><p>复制粘贴到位置可以直接到达<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528104541422.png" alt=""></p><ul><li>右键修改，将数值数据改为 <code>2</code>，确定即可<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528104806548.png" alt=""></li></ul><h2 id="win7远程桌面出现身份验证错误"><a href="#win7远程桌面出现身份验证错误" class="headerlink" title="win7远程桌面出现身份验证错误"></a>win7远程桌面出现身份验证错误</h2><p><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105057900.png" alt=""></p><h3 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a>解决方法</h3><ul><li>在桌面使用 <code>Win + R</code> 组合键调出 <code>运行</code> 窗口，并输gpedit.msc<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105223348.png" alt=""></li><li>打开配置项：计算机配置&gt;管理模板&gt;系统<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105421894.png" alt=""></li><li>凭据分配&gt;加密Oracle修正 <strong>双击“加密Oracle修正“</strong><br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105458799.png" alt=""></li><li>选择启用并选择易受攻击，配置保存后即可解决问题。</li></ul><p><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105324446.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;win10远程桌面出现身份验证错误&quot;&gt;&lt;a href=&quot;#win10远程桌面出现身份验证错误&quot; class=&quot;headerlink&quot; title=&quot;win10远程桌面出现身份验证错误&quot;&gt;&lt;/a&gt;win10远程桌面出现身份验证错误&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>第三章 按位运算符(三)</title>
@@ -463,29 +484,6 @@
       
         &lt;h2 id=&quot;启动方式&quot;&gt;&lt;a href=&quot;#启动方式&quot; class=&quot;headerlink&quot; title=&quot;启动方式&quot;&gt;&lt;/a&gt;启动方式&lt;/h2&gt;&lt;p&gt;1、使用linux命令service 启动：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;service mys
-      
-    
-    </summary>
-    
-      <category term="MySQL数据库学习" scheme="https://geekrabbit.club/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL数据库安装（二）</title>
-    <link href="https://geekrabbit.club/2019/06/12/MySQL%E6%95%B0%E6%8D%AEcentos%E5%AE%89%E8%A3%85%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-    <id>https://geekrabbit.club/2019/06/12/MySQL数据centos安装（二）/</id>
-    <published>2019-06-12T01:56:26.000Z</published>
-    <updated>2019-06-12T10:15:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Linux上安装MySQL"><a href="#Linux上安装MySQL" class="headerlink" title="Linux上安装MySQL"></a>Linux上安装MySQL</h3><p>安装前，我们可以检测系统是否自带安装 MySQL:</p><pre><code class="bash">rpm -qa | grep mysql</code></pre><p>如果系统有安装，那可以选择进行卸载</p><pre><code class="bash">rpm -e mysql　　// 普通删除模式 rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除</code></pre><h3 id="Centos7安装-MySQL："><a href="#Centos7安装-MySQL：" class="headerlink" title="Centos7安装 MySQL："></a>Centos7安装 MySQL：</h3><p>Centos7 系统下使用 yum 命令安装 MySQL，需要注意的是 CentOS 7 版本中 MySQL数据库已从默认的程序列表中移除，所以在安装前我们需要先去官网下载 Yum 资源包，下载地址为：<a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a> <a href="https://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/yum/</a></p><pre><code class="bash">wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm rpm -ivh mysql-community-release-el7-5.noarch.rpmyum updateyum install mysql-server</code></pre><p>权限设置：</p><pre><code class="bash">chown mysql:mysql -R /var/lib/mysql</code></pre><p>初始化 MySQL：</p><pre><code class="bash">mysqld --initialize</code></pre><p>启动 MySQL：</p><pre><code class="bash">systemctl start mysqld</code></pre><p>查看 MySQL 运行状态：</p><pre><code class="bash">systemctl status mysqld</code></pre><p>mariadb数据库的相关命令是：</p><pre><code class="bash">systemctl start mariadb #启动MariaDB systemctl stop mariadb #停止MariaDB systemctl restart mariadb #重启MariaDB systemctl enable mariadb #设置开机启动</code></pre><h3 id="验证-MySQL-安装"><a href="#验证-MySQL-安装" class="headerlink" title="验证 MySQL 安装"></a>验证 MySQL 安装</h3><p>使用 mysqladmin 工具来获取服务器状态：</p><pre><code class="bash">[root@host]# mysqladmin --version</code></pre><p>linux上该命令将输出以下结果，该结果基于你的系统信息：</p><pre><code class="bash">mysqladmin Ver  8.23  Distrib  5.0.9-0,  for redhat-linux-gnu on i386</code></pre><p>如果以上命令执行后未输出任何信息，说明Mysql未安装成功。</p><h3 id="Mysql安装后"><a href="#Mysql安装后" class="headerlink" title="Mysql安装后"></a>Mysql安装后</h3><p>Mysql安装成功后，默认的root用户密码为空，你可以使用以下命令来创建root用户的密码：</p><pre><code class="bash">[root@host]# mysqladmin -u root password &quot;new_password&quot;;</code></pre><p>连接到Mysql服务器：</p><pre><code class="bash">[root@host]# mysql -u root -p Enter password:*******</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Linux上安装MySQL&quot;&gt;&lt;a href=&quot;#Linux上安装MySQL&quot; class=&quot;headerlink&quot; title=&quot;Linux上安装MySQL&quot;&gt;&lt;/a&gt;Linux上安装MySQL&lt;/h3&gt;&lt;p&gt;安装前，我们可以检测系统是否自带安装 MySQL:&lt;
       
     
     </summary>

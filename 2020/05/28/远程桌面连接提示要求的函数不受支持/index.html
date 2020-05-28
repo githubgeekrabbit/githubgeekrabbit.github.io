@@ -55,7 +55,7 @@
     
     <title>
         
-            Centos搭建Ngrok实现内网穿透 | 
+            远程桌面连接提示要求的函数不受支持 | 
         
         geekrabbit
     </title>
@@ -222,7 +222,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="geekrabbit">
-    <meta name="msapplication-starturl" content="https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/">
+    <meta name="msapplication-starturl" content="https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="geekrabbit">
@@ -237,16 +237,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/">
+    <meta property="og:url" content="https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Centos搭建Ngrok实现内网穿透 | geekrabbit">
+    <meta property="og:title" content="远程桌面连接提示要求的函数不受支持 | geekrabbit">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Sat May 11 2019 20:18:08 GMT+0800">
-        <meta property="article:modified_time" content="Sat May 18 2019 08:07:04 GMT+0800">
+        <meta property="article:published_time" content="Thu May 28 2020 22:15:40 GMT+0800">
+        <meta property="article:modified_time" content="Thu May 28 2020 22:55:45 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -254,7 +254,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/index.html" />
+        <link rel="canonical" href="https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -335,7 +335,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#前言："><span class="post-toc-number">1.</span> <span class="post-toc-text">前言：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、准备"><span class="post-toc-number">2.</span> <span class="post-toc-text">1、准备</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、安装环境"><span class="post-toc-number">3.</span> <span class="post-toc-text">2、安装环境</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、安装go语言环境"><span class="post-toc-number">4.</span> <span class="post-toc-text">3、安装go语言环境</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、检查环境安装"><span class="post-toc-number">5.</span> <span class="post-toc-text">4、检查环境安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5、在服务器上搭建Ngrok服务"><span class="post-toc-number">6.</span> <span class="post-toc-text">5、在服务器上搭建Ngrok服务</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6、编译生成ngrokd（服务端）"><span class="post-toc-number">7.</span> <span class="post-toc-text">6、编译生成ngrokd（服务端）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7、编译生成ngrok（客户端）"><span class="post-toc-number">8.</span> <span class="post-toc-text">7、编译生成ngrok（客户端）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8、用SSH-Secure-Shell-Client工具"><span class="post-toc-number">9.</span> <span class="post-toc-text">8、用SSH Secure Shell Client工具</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9、在D-ngrok中新建文件，改名为-ngrok-cfg"><span class="post-toc-number">10.</span> <span class="post-toc-text">9、在D:\ngrok中新建文件，改名为 ngrok.cfg</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#10、开启远程服务"><span class="post-toc-number">11.</span> <span class="post-toc-text">10、开启远程服务</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如果有关闭终端，相关程序就被杀死的情况"><span class="post-toc-number">12.</span> <span class="post-toc-text">如果有关闭终端，相关程序就被杀死的情况</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-安装screen"><span class="post-toc-number">13.</span> <span class="post-toc-text">1.安装screen</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-输入screen，然后输入你要运行的命令"><span class="post-toc-number">14.</span> <span class="post-toc-text">2.输入screen，然后输入你要运行的命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-ctrl-A-然后按D，screen会关闭"><span class="post-toc-number">15.</span> <span class="post-toc-text">3.ctrl+A 然后按D，screen会关闭</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-查看正在运行的程序"><span class="post-toc-number">16.</span> <span class="post-toc-text">4.查看正在运行的程序</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#11、开启客户机服务"><span class="post-toc-number">17.</span> <span class="post-toc-text">11、开启客户机服务</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#！！！这很重要！！！"><span class="post-toc-number">18.</span> <span class="post-toc-text">！！！这很重要！！！</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#win10远程桌面出现身份验证错误"><span class="post-toc-number">1.</span> <span class="post-toc-text">win10远程桌面出现身份验证错误</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解决方法"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">解决方法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#win7远程桌面出现身份验证错误"><span class="post-toc-number">2.</span> <span class="post-toc-text">win7远程桌面出现身份验证错误</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解决方法-1"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">解决方法</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -367,7 +367,7 @@
         
     
             <p class="article-headline-p">
-                Centos搭建Ngrok实现内网穿透
+                远程桌面连接提示要求的函数不受支持
             </p>
         </div>
 
@@ -386,7 +386,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>geekrabbit</strong>
-        <span>5月 11, 2019</span>
+        <span>5月 28, 2020</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,7 +416,7 @@
     <!-- Leancloud Views -->
         <a class="post_share-link" href="#">
             <li class="mdl-menu__item">
-                <span id="/2019/05/11/Centos搭建Ngrok实现内网穿透/" class="leancloud-views_num" data-flag-title="Centos搭建Ngrok实现内网穿透">
+                <span id="/2020/05/28/远程桌面连接提示要求的函数不受支持/" class="leancloud-views_num" data-flag-title="远程桌面连接提示要求的函数不受支持">
      &nbsp;浏览量
 </span>
 
@@ -428,7 +428,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Centos搭建Ngrok实现内网穿透&url=https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/index.html&pic=https://geekrabbit.club/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=远程桌面连接提示要求的函数不受支持&url=https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/index.html&pic=https://geekrabbit.club/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -437,7 +437,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Centos搭建Ngrok实现内网穿透&url=https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/index.html&via=geekrabbit" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=远程桌面连接提示要求的函数不受支持&url=https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/index.html&via=geekrabbit" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -446,7 +446,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -455,7 +455,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://geekrabbit.club/2019/05/11/Centos搭建Ngrok实现内网穿透/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://geekrabbit.club/2020/05/28/远程桌面连接提示要求的函数不受支持/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -480,461 +480,32 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>原来一直用的别人搭建的内网穿透，因为是免费的，所以网速，稳定性都特别差，所以打算自己搭建一个属于自己的内网穿透</p>
-<h3 id="1、准备"><a href="#1、准备" class="headerlink" title="1、准备"></a>1、准备</h3><p>一台云服务器,一个域名,并且域名泛解析解析到云服务器,此处我用的服务器的操作系统为CentOS7(amd64)</p>
-<h3 id="2、安装环境"><a href="#2、安装环境" class="headerlink" title="2、安装环境"></a>2、安装环境</h3><p>安装gcc和git（用于下载ngrok源码）</p>
-<pre><code class="bash">yum install gcc -y
-yum install git -y
-</code></pre>
-<h3 id="3、安装go语言环境"><a href="#3、安装go语言环境" class="headerlink" title="3、安装go语言环境"></a>3、安装go语言环境</h3><pre><code>yum install -y mercurial git bzr subversion golang golang-pkg-windows-amd64 golang-pkg-windows-386
-</code></pre><h3 id="4、检查环境安装"><a href="#4、检查环境安装" class="headerlink" title="4、检查环境安装"></a>4、检查环境安装</h3><pre><code>git --version //( &gt;= 1.7 )
-go version
-</code></pre><h3 id="5、在服务器上搭建Ngrok服务"><a href="#5、在服务器上搭建Ngrok服务" class="headerlink" title="5、在服务器上搭建Ngrok服务"></a>5、在服务器上搭建Ngrok服务</h3><p>5.1.下载ngrok源码</p>
-<pre><code>git clone https://github.com/inconshreveable/ngrok.git
-</code></pre><p>5.2.生成证书</p>
-<pre><code>cd ngrok
-</code></pre><p>abc.com这里修改为自己的域名,命令一条一条复制即可</p>
-<pre><code>export NGROK_DOMAIN=&quot;abc.com&quot;
-
-openssl genrsa -out rootCA.key 2048
-
-openssl req -x509 -new -nodes -key rootCA.key -subj &quot;/CN=$NGROK_DOMAIN&quot; -days 5000 -out rootCA.pem
-
-openssl genrsa -out device.key 2048
-
-openssl req -new -key device.key -subj &quot;/CN=$NGROK_DOMAIN&quot; -out device.csr
-
-openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 5000
-</code></pre><p>5.3.将新生成的证书替换，执行下面命令后 “y” 回车 一行一行执行代码！</p>
-<pre><code>cp rootCA.pem assets/client/tls/ngrokroot.crt
-
-cp device.crt assets/server/tls/snakeoil.crt
-
-cp device.key assets/server/tls/snakeoil.key
-</code></pre><h3 id="6、编译生成ngrokd（服务端）"><a href="#6、编译生成ngrokd（服务端）" class="headerlink" title="6、编译生成ngrokd（服务端）"></a>6、编译生成ngrokd（服务端）</h3><pre><code>GOOS=linux GOARCH=amd64 make release-server
-</code></pre><p>​ 生成在~/ngrok/bin/目录中</p>
-<h3 id="7、编译生成ngrok（客户端）"><a href="#7、编译生成ngrok（客户端）" class="headerlink" title="7、编译生成ngrok（客户端）"></a>7、编译生成ngrok（客户端）</h3><pre><code>GOOS=windows GOARCH=amd64 make release-client
-</code></pre><p>​ 生成在~/ngrok/bin/windows_amd64/目录中</p>
-<h3 id="8、用SSH-Secure-Shell-Client工具"><a href="#8、用SSH-Secure-Shell-Client工具" class="headerlink" title="8、用SSH Secure Shell Client工具"></a>8、用SSH Secure Shell Client工具</h3><p>将~/ngrok/bin/windows_amd64/里的文件下载到本地Windows下，如D:\ngrok</p>
-<h3 id="9、在D-ngrok中新建文件，改名为-ngrok-cfg"><a href="#9、在D-ngrok中新建文件，改名为-ngrok-cfg" class="headerlink" title="9、在D:\ngrok中新建文件，改名为 ngrok.cfg"></a>9、在D:\ngrok中新建文件，改名为 ngrok.cfg</h3><p>文件中输入：</p>
-<pre><code>server_addr: &quot;abc.com:8083&quot;
-trust_host_root_certs: false
-tunnels:
-  http:
-    subdomain: &quot;www&quot;
-    proto:
-      http: &quot;80&quot;
-
-  https:
-    subdomain: &quot;www&quot;
-    proto:
-      https: &quot;443&quot;
-
-  ssh:
-    remote_port: 2222
-    proto:
-      tcp: &quot;22&quot;
-
-  mstsc:
-        remote_port: 52222      
-        proto:
-         tcp: &quot;192.168.0.107:3389&quot;
-</code></pre><p>以上 8083 80 443 与 远程开启的端口一致，</p>
-<h3 id="10、开启远程服务"><a href="#10、开启远程服务" class="headerlink" title="10、开启远程服务"></a>10、开启远程服务</h3><p>在ngrok目录中</p>
-<pre><code>cd ngrok
-
-sudo ./bin/ngrokd -domain=&quot;abc.com&quot;  -httpAddr=&quot;:80&quot; -httpsAddr=&quot;:443&quot; -tunnelAddr=&quot;:8083&quot; &amp;
-</code></pre><p>这里的端口号与config文件对应，视情况而定</p>
-<pre><code>[16:05:23 CST 2018/01/09][INFO] (ngrok/log.(*PrefixLogger).Info:83) [registry][tun] No affinity cache specified
-
-[16:05:23 CST 2018/01/09][INFO] (ngrok/log.Info:112) Listening for public http connections on [::]:80
-
-[16:05:23 CST 2018/01/09][INFO] (ngrok/log.Info:112) Listening for public https connections on [::]:443
-
-[16:05:23 CST 2018/01/09][INFO] (ngrok/log.Info:112) Listening for control and proxy connections on [::]:8083
-
-[16:05:23 CST 2018/01/09][INFO] (ngrok/log.(*PrefixLogger).Info:83) [metrics] Reporting every 30 seconds
-显示此为成功开启
-</code></pre><h3 id="如果有关闭终端，相关程序就被杀死的情况"><a href="#如果有关闭终端，相关程序就被杀死的情况" class="headerlink" title="如果有关闭终端，相关程序就被杀死的情况"></a>如果有关闭终端，相关程序就被杀死的情况</h3><h3 id="1-安装screen"><a href="#1-安装screen" class="headerlink" title="1.安装screen"></a>1.安装screen</h3><pre><code>yum install -y screen
-</code></pre><h3 id="2-输入screen，然后输入你要运行的命令"><a href="#2-输入screen，然后输入你要运行的命令" class="headerlink" title="2.输入screen，然后输入你要运行的命令"></a>2.输入screen，然后输入你要运行的命令</h3><h3 id="3-ctrl-A-然后按D，screen会关闭"><a href="#3-ctrl-A-然后按D，screen会关闭" class="headerlink" title="3.ctrl+A 然后按D，screen会关闭"></a>3.ctrl+A 然后按D，screen会关闭</h3><h3 id="4-查看正在运行的程序"><a href="#4-查看正在运行的程序" class="headerlink" title="4.查看正在运行的程序"></a>4.查看正在运行的程序</h3><pre><code>screen -ls
-</code></pre><p>现在关闭终端，在screen中的程序会继续后台运行</p>
-<h3 id="11、开启客户机服务"><a href="#11、开启客户机服务" class="headerlink" title="11、开启客户机服务"></a>11、开启客户机服务</h3><p>在Windows中D:\ngrok新建文件 改名 start.bat</p>
-<p>输入：</p>
-<p>ngrok -config=ngrok.cfg start http https ssh mstsc</p>
-<p>直接双击运行<br><img src="https://i.loli.net/2019/05/11/5cd6c21b6d2ce.png" alt=""></p>
-<p>表示成功，</p>
-<p>不成功的话看看自己的开启端口是否与config文件中对应</p>
-<p>或查看服务器的远程端口是否在安全组中打开</p>
-<h3 id="！！！这很重要！！！"><a href="#！！！这很重要！！！" class="headerlink" title="！！！这很重要！！！"></a>！！！这很重要！！！</h3><p>关于ngrok在远程开机自启问题</p>
-<p>服务器后台开机启动运行ngrok服务端：</p>
-<p>1.以下内容新建一个 start.sh 文件 放到 ~/ngrok/start.sh</p>
-<pre><code>~/ngrok/bin/ngrokd -domain=&quot;abc.com&quot;  -httpAddr=&quot;:80&quot; -httpsAddr=&quot;:443&quot; -tunnelAddr=&quot;:8083&quot; &amp;
-</code></pre><p>给权限：</p>
-<pre><code>chmod 755 ~/ngrok/start.sh
-
-</code></pre><p>2.新建ngrok启动脚本文件</p>
-<pre><code>sudo vi /etc/init.d/ngrok
-</code></pre><p>文件内容：</p>
-<pre><code>#!/bin/sh  
-
-#chkconfig:2345 70 30  
-
-#description:ngrok
-
-BEGIN INIT INFO
-
-Provides:          ngrok
-
-Required-Start:
-
-Required-Stop:
-
-Default-Start:    2 3 4 5
-
-Default-Stop:      0 1 6
-
-Short-Description: Start or stop the ngrok Proxy.
-
-END INIT INFO
-
-ngrok_path=~/ngrok/
-
-case &quot;$1&quot; in
-
-    start)
-
-            echo &quot;start ngrok service..&quot;
-
-            sh ${ngrok_path}/start.sh
-
-            ;;
-
-  *)
-
-    exit 1
-
-    ;;
-
-esac
-</code></pre><p>提示 : 运行sudo vi /etc/init.d/ngrok之后 ！！直接按键盘 I 进入编辑模式，然后复制下面内容 然后 “esc” “:” “wq” “!” “回车” 意思是保存退出！<br>3.ngrok脚本文件 给权限</p>
-<pre><code>cd /etc/init.d
-
-chmod 755 ngrok
-</code></pre><p>4.添加启动服务 ngrok</p>
-<pre><code>chkconfig --add ngrok
-</code></pre><p>5.测试服务是否能启动成功</p>
-<pre><code>service ngrok start
-</code></pre><p>6.查看自启动的服务 是否有 nrgok ！！</p>
-<pre><code>chkconfig  
-</code></pre><p>执行这个代码如果出现后面的就OK了！！ ngrok 0:off 1:off 2:on 3:on 4:on 5:on 6:off</p>
-<p>服务器ngrok的服务端开机自动启动成功了！！<br>7.在此附上python版源码</p>
-<pre><code class="bash">#!/usr/bin/env python
-# -*- coding: UTF-8 -*-
-# 建议Python 2.7.9 或 Python 3.4.2 以上运行
-# 项目地址: https://github.com/hauntek/python-ngrok
-# Version: v1.5
-import socket
-import ssl
-import json
-import struct
-import random
-import sys
-import time
-import logging
-import threading
-
-host = &#39;tunnel.qydev.com&#39; # Ngrok服务器地址
-port = 4443 # 端口
-bufsize = 1024 # 吞吐量
-
-Tunnels = list() # 全局渠道赋值
-body = dict()
-body[&#39;protocol&#39;] = &#39;http&#39;
-body[&#39;hostname&#39;] = &#39;www.xxx.com&#39;
-body[&#39;subdomain&#39;] = &#39;&#39;
-body[&#39;rport&#39;] = 0
-body[&#39;lhost&#39;] = &#39;127.0.0.1&#39;
-body[&#39;lport&#39;] = 80
-Tunnels.append(body) # 加入渠道队列
-
-body = dict()
-body[&#39;protocol&#39;] = &#39;http&#39;
-body[&#39;hostname&#39;] = &#39;&#39;
-body[&#39;subdomain&#39;] = &#39;xxx&#39;
-body[&#39;rport&#39;] = 0
-body[&#39;lhost&#39;] = &#39;127.0.0.1&#39;
-body[&#39;lport&#39;] = 80
-Tunnels.append(body) # 加入渠道队列
-
-body = dict()
-body[&#39;protocol&#39;] = &#39;tcp&#39;
-body[&#39;hostname&#39;] = &#39;&#39;
-body[&#39;subdomain&#39;] = &#39;&#39;
-body[&#39;rport&#39;] = 55499
-body[&#39;lhost&#39;] = &#39;127.0.0.1&#39;
-body[&#39;lport&#39;] = 22
-Tunnels.append(body) # 加入渠道队列
-
-reqIdaddr = dict()
-localaddr = dict()
-
-# 读取配置文件
-if len(sys.argv) &gt;= 2:
-    file_object = open(sys.argv[1])
-    try:
-        all_the_text = file_object.read()
-        config_object = json.loads(all_the_text)
-        host = config_object[&quot;server&quot;][&quot;host&quot;] # Ngrok服务器地址
-        port = int(config_object[&quot;server&quot;][&quot;port&quot;]) # 端口
-        bufsize = int(config_object[&quot;server&quot;][&quot;bufsize&quot;]) # 吞吐量
-        Tunnels = list() # 重置渠道赋值
-        for Tunnel in config_object[&quot;client&quot;]:
-            body = dict()
-            body[&#39;protocol&#39;] = Tunnel[&quot;protocol&quot;]
-            body[&#39;hostname&#39;] = Tunnel[&quot;hostname&quot;]
-            body[&#39;subdomain&#39;] = Tunnel[&quot;subdomain&quot;]
-            body[&#39;rport&#39;] = int(Tunnel[&quot;rport&quot;])
-            body[&#39;lhost&#39;] = Tunnel[&quot;lhost&quot;]
-            body[&#39;lport&#39;] = int(Tunnel[&quot;lport&quot;])
-            Tunnels.append(body) # 加入渠道队列
-        del all_the_text
-        del config_object
-    except Exception:
-        # logger = logging.getLogger(&#39;%s&#39; % &#39;config&#39;)
-        # logger.error(&#39;The configuration file read failed&#39;)
-        # exit(1)
-        pass
-    finally:
-        file_object.close()
-
-mainsocket = 0
-
-ClientId = &#39;&#39;
-pingtime = 0
-
-def getloacladdr(Tunnels, Url):
-    protocol = Url[0:Url.find(&#39;:&#39;)]
-    hostname = Url[Url.find(&#39;//&#39;) + 2:]
-    subdomain = hostname[0:hostname.find(&#39;.&#39;)]
-    rport = Url[Url.rfind(&#39;:&#39;) + 1:]
-
-    for tunnelinfo in Tunnels:
-        if tunnelinfo.get(&#39;protocol&#39;) == protocol:
-            if tunnelinfo.get(&#39;protocol&#39;) in [&#39;http&#39;, &#39;https&#39;]:
-                if tunnelinfo.get(&#39;hostname&#39;) == hostname:
-                    return tunnelinfo
-                if tunnelinfo.get(&#39;subdomain&#39;) == subdomain:
-                    return tunnelinfo
-            if tunnelinfo.get(&#39;protocol&#39;) == &#39;tcp&#39;:
-                if tunnelinfo.get(&#39;rport&#39;) == int(rport):
-                    return tunnelinfo
-
-    return dict()
-
-def dnsopen(host):
-    try:
-        ip = socket.gethostbyname(host)
-    except socket.error:
-        return False
-
-    return ip
-
-def connectremote(host, port):
-    try:
-        host = socket.gethostbyname(host)
-        client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        ssl_client = ssl.wrap_socket(client, ssl_version=ssl.PROTOCOL_SSLv23)
-        ssl_client.connect((host, port))
-        ssl_client.setblocking(1)
-        logger = logging.getLogger(&#39;%s:%d&#39; % (&#39;Conn&#39;, ssl_client.fileno()))
-        logger.debug(&#39;New connection to: %s:%d&#39; % (host, port))
-    except socket.error:
-        return False
-
-    return ssl_client
-
-def connectlocal(localhost, localport):
-    try:
-        localhost = socket.gethostbyname(localhost)
-        client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client.connect((localhost, localport))
-        client.setblocking(1)
-        logger = logging.getLogger(&#39;%s:%d&#39; % (&#39;Conn&#39;, client.fileno()))
-        logger.debug(&#39;New connection to: %s:%d&#39; % (localhost, localport))
-    except socket.error:
-        return False
-
-    return client
-
-def NgrokAuth():
-    Payload = dict()
-    Payload[&#39;ClientId&#39;] = &#39;&#39;
-    Payload[&#39;OS&#39;] = &#39;darwin&#39;
-    Payload[&#39;Arch&#39;] = &#39;amd64&#39;
-    Payload[&#39;Version&#39;] = &#39;2&#39;
-    Payload[&#39;MmVersion&#39;] = &#39;1.7&#39;
-    Payload[&#39;User&#39;] = &#39;user&#39;
-    Payload[&#39;Password&#39;] = &#39;&#39;
-    body = dict()
-    body[&#39;Type&#39;] = &#39;Auth&#39;
-    body[&#39;Payload&#39;] = Payload
-    buffer = json.dumps(body)
-    return(buffer)
-
-def ReqTunnel(ReqId, Protocol, Hostname, Subdomain, RemotePort):
-    Payload = dict()
-    Payload[&#39;ReqId&#39;] = ReqId
-    Payload[&#39;Protocol&#39;] = Protocol
-    Payload[&#39;Hostname&#39;] = Hostname
-    Payload[&#39;Subdomain&#39;] = Subdomain
-    Payload[&#39;HttpAuth&#39;] = &#39;&#39;
-    Payload[&#39;RemotePort&#39;] = RemotePort
-    body = dict()
-    body[&#39;Type&#39;] = &#39;ReqTunnel&#39;
-    body[&#39;Payload&#39;] = Payload
-    buffer = json.dumps(body)
-    return(buffer)
-
-def RegProxy(ClientId):
-    Payload = dict()
-    Payload[&#39;ClientId&#39;] = ClientId
-    body = dict()
-    body[&#39;Type&#39;] = &#39;RegProxy&#39;
-    body[&#39;Payload&#39;] = Payload
-    buffer = json.dumps(body)
-    return(buffer)
-
-def Ping():
-    Payload = dict()
-    body = dict()
-    body[&#39;Type&#39;] = &#39;Ping&#39;
-    body[&#39;Payload&#39;] = Payload
-    buffer = json.dumps(body)
-    return(buffer)
-
-def lentobyte(len):
-    return struct.pack(&#39; 0:
-                if not recvbuf:
-                    recvbuf = recvbut
-                else:
-                    recvbuf += recvbut
-
-            if type == 1 or (type == 2 and linkstate == 1):
-                lenbyte = tolen(recvbuf[0:8])
-                if len(recvbuf) &gt;= (8 + lenbyte):
-                    buf = recvbuf[8:lenbyte + 8].decode(&#39;utf-8&#39;)
-                    logger = logging.getLogger(&#39;%s:%d&#39; % (&#39;Recv&#39;, sock.fileno()))
-                    logger.debug(&#39;Reading message with length: %d&#39; % len(buf))
-                    logger.debug(&#39;Read message: %s&#39; % buf)
-                    js = json.loads(buf)
-                    if type == 1:
-                        if js[&#39;Type&#39;] == &#39;ReqProxy&#39;:
-                            newsock = connectremote(host, port)
-                            if newsock:
-                                thread = threading.Thread(target = HKClient, args = (newsock, 0, 2))
-                                thread.setDaemon(True)
-                                thread.start()
-                        if js[&#39;Type&#39;] == &#39;AuthResp&#39;:
-                            ClientId = js[&#39;Payload&#39;][&#39;ClientId&#39;]
-                            logger = logging.getLogger(&#39;%s&#39; % &#39;client&#39;)
-                            logger.info(&#39;Authenticated with server, client id: %s&#39; % ClientId)
-                            sendpack(sock, Ping())
-                            pingtime = time.time()
-                            for info in Tunnels:
-                                reqid = getRandChar(8)
-                                sendpack(sock, ReqTunnel(reqid, info[&#39;protocol&#39;], info[&#39;hostname&#39;], info[&#39;subdomain&#39;], info[&#39;rport&#39;]))
-                                reqIdaddr[reqid] = (info[&#39;lhost&#39;], info[&#39;lport&#39;])
-                        if js[&#39;Type&#39;] == &#39;NewTunnel&#39;:
-                            if js[&#39;Payload&#39;][&#39;Error&#39;] != &#39;&#39;:
-                                logger = logging.getLogger(&#39;%s&#39; % &#39;client&#39;)
-                                logger.error(&#39;Server failed to allocate tunnel: %s&#39; % js[&#39;Payload&#39;][&#39;Error&#39;])
-                                time.sleep(30)
-                            else:
-                                logger = logging.getLogger(&#39;%s&#39; % &#39;client&#39;)
-                                logger.info(&#39;Tunnel established at %s&#39; % js[&#39;Payload&#39;][&#39;Url&#39;])
-                                localaddr[js[&#39;Payload&#39;][&#39;Url&#39;]] = reqIdaddr[js[&#39;Payload&#39;][&#39;ReqId&#39;]]
-                    if type == 2:
-                        if js[&#39;Type&#39;] == &#39;StartProxy&#39;:
-                            localhost, localport = localaddr[js[&#39;Payload&#39;][&#39;Url&#39;]]
-
-                            newsock = connectlocal(localhost, localport)
-                            if newsock:
-                                thread = threading.Thread(target = HKClient, args = (newsock, 0, 3, sock))
-                                thread.setDaemon(True)
-                                thread.start()
-                                tosock = newsock
-                                linkstate = 2
-                            else:
-                                body = &#39;Tunnel %s unavailableUnable to initiate connection to %s. This port is not yet available for web server.&#39;
-                                html = body % (js[&#39;Payload&#39;][&#39;Url&#39;], localhost + &#39;:&#39; + str(localport))
-                                header = &quot;HTTP/1.0 502 Bad Gateway&quot; + &quot;\r\n&quot;
-                                header += &quot;Content-Type: text/html&quot; + &quot;\r\n&quot;
-                                header += &quot;Content-Length: %d&quot; + &quot;\r\n&quot;
-                                header += &quot;\r\n&quot; + &quot;%s&quot;
-                                buf = header % (len(html.encode(&#39;utf-8&#39;)), html)
-                                sendbuf(sock, buf.encode(&#39;utf-8&#39;))
-
-                    if len(recvbuf) == (8 + lenbyte):
-                        recvbuf = bytes()
-                    else:
-                        recvbuf = recvbuf[8 + lenbyte:]
-
-            if type == 3 or (type == 2 and linkstate == 2):
-                sendbuf(tosock, recvbuf)
-                recvbuf = bytes()
-
-        except socket.error:
-            break
-
-    if type == 1:
-        mainsocket = False
-    if type == 3:
-        try:
-            tosock.shutdown(socket.SHUT_WR)
-        except socket.error:
-            tosock.close()
-
-    logger = logging.getLogger(&#39;%s:%d&#39; % (&#39;Close&#39;, sock.fileno()))
-    logger.debug(&#39;Closing&#39;)
-    sock.close()
-
-# 客户端程序初始化
-if __name__ == &#39;__main__&#39;:
-    logging.basicConfig(level=logging.DEBUG, format=&#39;[%(asctime)s] [%(levelname)s] [%(name)s] %(message)s&#39;, datefmt=&#39;%Y/%m/%d %H:%M:%S&#39;)
-    logger = logging.getLogger(&#39;%s&#39; % &#39;client&#39;)
-    logger.info(&#39;python-ngrok v1.5&#39;)
-    while True:
-        try:
-            # 检测控制连接是否连接.
-            if mainsocket == False:
-                ip = dnsopen(host)
-                if ip == False:
-                    logger = logging.getLogger(&#39;%s&#39; % &#39;client&#39;)
-                    logger.info(&#39;update dns&#39;)
-                    time.sleep(10)
-                    continue
-                mainsocket = connectremote(ip, port)
-                if mainsocket == False:
-                    logger = logging.getLogger(&#39;%s&#39; % &#39;client&#39;)
-                    logger.info(&#39;connect failed...!&#39;)
-                    time.sleep(10)
-                    continue
-                thread = threading.Thread(target = HKClient, args = (mainsocket, 0, 1))
-                thread.setDaemon(True)
-                thread.start()
-
-            # 发送心跳
-            if pingtime + 20 &lt; time.time() and pingtime != 0:
-                sendpack(mainsocket, Ping())
-                pingtime = time.time()
-
-            time.sleep(1)
-
-        except socket.error:
-            pingtime = 0
-        except KeyboardInterrupt:
-            sys.exit()
-</code></pre>
+        <h2 id="win10远程桌面出现身份验证错误"><a href="#win10远程桌面出现身份验证错误" class="headerlink" title="win10远程桌面出现身份验证错误"></a>win10远程桌面出现身份验证错误</h2><p><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528103044008.png" alt=""></p>
+<blockquote>
+<p>提示“出现身份验证错误。要求的函数不受支持。可能由于CredSSP 加密 Oracle 修正”。</p>
+</blockquote>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ul>
+<li>在桌面使用 <code>Win + R</code> 组合键调出 <code>运行</code> 窗口，并输入 <code>regedit</code> （注册表编辑器）后回车；<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528103848595.png" alt=""></li>
+<li>在注册表编辑器的左侧栏中依次逐层找到路径<br>提示：如果你展开到 <code>System</code> 后，发现没有 <code>CredSSP</code> 这个项，请您执行以下两步：</li>
+</ul>
+<ol>
+<li>在 <code>System</code> 上 <code>右键 -&gt; 新建 -&gt; 项</code>，将新建的项更名为 <code>CredSSP</code>； </li>
+<li>在 <code>CredSSP</code> 上 <code>右键 -&gt; 新建 -&gt; 项</code>，将新建的项更名为 <code>Parameters</code>； </li>
+<li>在 <code>Parameters</code> 上 <code>右键 -&gt; 新建 -&gt; DWORD (32位)值</code>，将新建的值名称改为 <code>AllowEncryptionOracle</code>，完成后双击该名称（若您现在已存在，直接双击即可），将弹出一个对话框：</li>
+</ol>
+<pre><code>计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters
+</code></pre><p>复制粘贴到位置可以直接到达<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528104541422.png" alt=""></p>
+<ul>
+<li>右键修改，将数值数据改为 <code>2</code>，确定即可<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528104806548.png" alt=""></li>
+</ul>
+<h2 id="win7远程桌面出现身份验证错误"><a href="#win7远程桌面出现身份验证错误" class="headerlink" title="win7远程桌面出现身份验证错误"></a>win7远程桌面出现身份验证错误</h2><p><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105057900.png" alt=""></p>
+<h3 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a>解决方法</h3><ul>
+<li>在桌面使用 <code>Win + R</code> 组合键调出 <code>运行</code> 窗口，并输gpedit.msc<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105223348.png" alt=""></li>
+<li>打开配置项：计算机配置&gt;管理模板&gt;系统<br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105421894.png" alt=""></li>
+<li>凭据分配&gt;加密Oracle修正 <strong>双击“加密Oracle修正“</strong><br><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105458799.png" alt=""></li>
+<li>选择启用并选择易受攻击，配置保存后即可解决问题。</li>
+</ul>
+<p><img src="/2020/05/28/远程桌面连接提示要求的函数不受支持/20200528105324446.png" alt=""></p>
 
         
     
@@ -980,21 +551,13 @@ if __name__ == &#39;__main__&#39;:
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/05/17/中兴光猫修改mac和sn/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2019/05/11/linux 远程连接ssh提示IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY解决/" id="post_nav-older" class="next-content">
+        <a href="/2020/05/20/按位运算符/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
