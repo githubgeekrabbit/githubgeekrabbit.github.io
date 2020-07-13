@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekrabbit.top/"/>
-  <updated>2020-05-28T14:55:45.777Z</updated>
+  <updated>2020-07-11T02:05:31.942Z</updated>
   <id>https://geekrabbit.top/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开启ssh服务</title>
+    <link href="https://geekrabbit.top/2020/07/11/%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://geekrabbit.top/2020/07/11/开启ssh服务/</id>
+    <published>2020-07-11T01:44:39.000Z</published>
+    <updated>2020-07-11T02:05:31.942Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="centos开启ssh服务"><a href="#centos开启ssh服务" class="headerlink" title="centos开启ssh服务"></a>centos开启ssh服务</h2><p><strong><strong> 安装 openssh-server </strong></strong></p><pre><code class="bash">yum install openssh-server</code></pre><p><strong><strong> 修改sshd服务配置文件 sshd_config </strong></strong></p><pre><code class="bash">vi /etc/ssh/sshd_config</code></pre><p><strong><strong> Port 22前面的 #号 去除 </strong></strong><br><img src="/2020/07/11/开启ssh服务/20200711095401051.png" alt=""></p><p><strong><strong>  #号 去除开启允许远程登录 </strong></strong><br><img src="/2020/07/11/开启ssh服务/20200711100143124.png" alt=""></p><p><strong><strong>  #号 去除使用用户名密码来作为连接验证 </strong></strong><br><img src="/2020/07/11/开启ssh服务/20200711100319760.png" alt=""><br>保存文件，退出</p><p><strong><strong> 开启  sshd  服务 </strong></strong></p><pre><code class="bash">service sshd start</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;centos开启ssh服务&quot;&gt;&lt;a href=&quot;#centos开启ssh服务&quot; class=&quot;headerlink&quot; title=&quot;centos开启ssh服务&quot;&gt;&lt;/a&gt;centos开启ssh服务&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;strong&gt; 安装 openss
+      
+    
+    </summary>
+    
+      <category term="服务器" scheme="https://geekrabbit.top/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="服务器" scheme="https://geekrabbit.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第四章 for循环（一）</title>
+    <link href="https://geekrabbit.top/2020/06/23/%E5%BE%AA%E7%8E%AF%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://geekrabbit.top/2020/06/23/循环（一）/</id>
+    <published>2020-06-23T08:39:55.000Z</published>
+    <updated>2020-07-13T09:19:32.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><p><strong><strong> 重复执行一个语句块，直到满足某个条件为止，这称为循环 </strong></strong></p><h2 id="循环的工作过程"><a href="#循环的工作过程" class="headerlink" title="循环的工作过程"></a>循环的工作过程</h2><p><img src="/2020/06/23/循环（一）/20200623045754070.png" alt=""></p><h2 id="递增和递减运算符"><a href="#递增和递减运算符" class="headerlink" title="递增和递减运算符"></a>递增和递减运算符</h2><blockquote><p><code>递增运算符:  ++</code> 和<code>递减运算符:  --</code>  会将储存在整数变量中的值<code>递增或递减 1</code> 假设定义一个整数变量<code>number</code>,他的当前值为6，使用以下语句个它加1.</p></blockquote><pre><code class="bash">++number;</code></pre><pre><code class="bash">number=number+1;number+=1;++number;//这些变量都是给number加1，最后一种形式最简洁</code></pre><p>执行完这个语句，number的值为7，同样可以用<code>--number</code>减一</p><pre><code class="bash">--number;</code></pre><pre><code class="bash">number=number-1;number-=1;--number;//这些变量都是给number减1，最后一种形式最简洁</code></pre><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><blockquote><p>假定要显示（1~10)之间的数字，不用编写十条printf语句，使用for语句如下：</p></blockquote><pre><code class="bash">for(int count=1; count&lt;=10; ++count){   printf(&quot;%d&quot;,count);}</code></pre><blockquote><p>解剖：</p><ol><li>int count=1; 声明count，初始为1</li><li>count&lt;=10; 在每个循环开始时计算。如果结果为true，循环就继续，否则循环就停止</li><li>++count 在每次循环结束时执行。他递增count，每次加1</li></ol></blockquote><p>流程图<br><img src="/2020/06/23/循环（一）/20200709082950072.png" alt=""></p><h2 id="for循环的一般语法"><a href="#for循环的一般语法" class="headerlink" title="for循环的一般语法"></a>for循环的一般语法</h2><pre><code class="bash">for(starting_condition;continuation_condition;action_per_iteration)   loop_statement;next_statement;</code></pre><p><strong><strong>starting_condition</strong></strong></p><blockquote><p>这个位置通常设定循环控制变量的初始值，只执行一次 循环控制变量一般（但非必要）是一个计数器，用来追踪循环重复的次数 也可以在这里声明并初始化相同类型的多个变量，各个声明用逗号隔开 此时所有变量都是循环的本地变量，在循环结束后就不存在了</p></blockquote><p><strong><strong>continuation_condition</strong></strong></p><blockquote><p>在循环开始时开始测试，而不是在结束时测试 是一个结果为<code>true</code>或<code>false</code>的逻辑表达式，用以决定循环是否继续执行 只要这个条件为<code>true</code>，循环就继续 它一般检查循环控制变量的值，但任何逻辑或算术表达式都可以放在这里，只要知道自己在做什么即可</p></blockquote><p><strong><strong>action_per_iteration</strong></strong></p><blockquote><p>在每次循环迭代结束时执行，通常（但不一定）是递增或递减一个或多个循环控制变量 修改多个变量的表达式用逗号隔开</p></blockquote><p><strong><strong>loop_statement</strong></strong></p><blockquote><p>在每次循环迭代时，都会执行 一旦<code>continuation_condition</code>是false，循环就结束，程序继续执行<code>next_statement</code></p></blockquote><h2 id="递增的递减运算符的前置和后置形式"><a href="#递增的递减运算符的前置和后置形式" class="headerlink" title="递增的递减运算符的前置和后置形式"></a>递增的递减运算符的前置和后置形式</h2><pre><code class="bash">++i//把++运算符放在变量前面，这叫做前置形式i++//把++运算符放在变量后面，这叫做后置形式</code></pre><blockquote><p>在表达式中使用前置和后置的效果大不相同，++i表示，i自增1后再参与其它运算；而i++ 则是i参与运算后，i的值再自增1。</p></blockquote><pre><code class="bash">int count=5;total=++count+6;total=12;</code></pre><blockquote><p>变量count会递增到6，在与右边的值计算，因此total的值为12，递减运算和递增完全相同</p></blockquote><pre><code class="bash">int count=5;total=6+count++;total=11</code></pre><blockquote><p>total的值为11,这是因为count的值在表达式中使用后才递加，递减运算和递增完全相同</p></blockquote><h2 id="没有参数的for循环"><a href="#没有参数的for循环" class="headerlink" title="没有参数的for循环"></a>没有参数的for循环</h2><blockquote><p>for循环最简洁的形式如下</p></blockquote><pre><code class="bash">for( ；；){   /*statements*/}</code></pre><h2 id="循环内的break语句"><a href="#循环内的break语句" class="headerlink" title="循环内的break语句"></a>循环内的break语句</h2><blockquote><p>在switch语句中使用过break，他的作用是为了终止代码的执行，break语句在循环体内的作用和switch一样</p></blockquote><p><strong><strong> 这是一个无限循环，如果输入的字符是n或N，才会执行break语句结束循环 </strong></strong></p><pre><code class="bash">#include &lt;stdio.h&gt;int main(){    char answer =0;    for( ; ;)    {        printf(&quot;是否要再输入一些（y/n）&quot;);        scanf(&quot;%c&quot;,&amp;answer);        if(tolower(answer)==&#39;n&#39;)        break;    }}</code></pre><h2 id="使用for循环限制输入"><a href="#使用for循环限制输入" class="headerlink" title="使用for循环限制输入"></a>使用for循环限制输入</h2><blockquote><p>可以使用for循环限制用户的输入次数，这个程序要求用户猜测该程序挑选出的幸运数字。它使用了一个for循环和许多if语句。还加进了条件运算符,提醒读者不要忘记如何使用它</p></blockquote><pre><code class="bash">#include &lt;stdio.h&gt;int main(){           int chosen=15;  //幸运数字      int guess=0;   //储存猜测      int count=3;    //3次机会      printf(&quot;这是个猜谜游戏&quot;);      printf(&quot;选一个1和20之间的数字，你一定能猜到&quot;);      for(;count&gt;0;--count)      {           printf(&quot;你有%d次机会&quot;,count);           printf(&quot;猜猜看&quot;);           scanf(&quot;%d&quot;,&amp;guess);           if(guess==chosen)           {                printf(&quot;恭喜你猜对了&quot;);                 return 0;            }             else if(guess&lt;1||guess&gt;15999)            printf(&quot;请输入一个1-20的数字&quot;);            else              printf(&quot;你输入的%d是不对的，你的数字 %s &quot;,guess,chosen&gt;guess?&quot;小了&quot;:&quot;大了&quot;);            }      printf(&quot;你尝试了3次都失败了幸运数字是%d&quot;,chosen);     return 0;   } </code></pre><h2 id="生成伪随机数"><a href="#生成伪随机数" class="headerlink" title="生成伪随机数"></a>生成伪随机数</h2><blockquote><p>在C语言中，我们一般使用&lt;stdlib.h&gt;头文件中的 rand() 函数来生成随机数，它的用法为：</p></blockquote><pre><code> int rand (void);  //void 表示不需要传递参数。</code></pre><blockquote><p>rand() 会随机生成一个位于 0 ~ RAND_MAX 之间的整数。RAND_MAX 是  头文件中的一个宏，它用来指明 rand() 所能返回的随机数的最大值。C语言标准并没有规定 RAND_MAX 的具体数值，只是规定它的值至少为 32767。在实际编程中，我们也不需要知道 RAND_MAX 的具体值，把它当做一个很大的数来对待即可。</p></blockquote><pre><code>#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt; //使用&lt;stdlib.h&gt;头文件中的 rand() 函数int main(){      int chosen=0;  //幸运数字      chosen=rand ();  //rand来生成随机数      int guess=0;   //储存猜测      int count=3;    //3次机会      printf(&quot;这是个猜谜游戏&quot;);      printf(&quot;选一个1和20之间的数字，你一定能猜到&quot;);      for(;count&gt;0;--count)      {           printf(&quot;你有%d次机会&quot;,count);           printf(&quot;猜猜看&quot;);           scanf(&quot;%d&quot;,&amp;guess);           if(guess==chosen)           {                printf(&quot;恭喜你猜对了&quot;);                 return 0;            }             else if(guess&lt;1||guess&gt;15999)            printf(&quot;请输入一个1-20的数字&quot;);            else              printf(&quot;你输入的%d是不对的，你的数字 %s &quot;,guess,chosen&gt;guess?&quot;小了&quot;:&quot;大了&quot;);       }      printf(&quot;你尝试了3次都失败了幸运数字是%d&quot;,chosen);     return 0; } </code></pre><blockquote><p>乍看之下,这似平并没有让猜数游戏改变多少,因为每次执行程序时,必须产生个不同的种子值。此时可以使用另一个库函数:在&lt;time.h&gt;头文件中声明的函数 timeo。timeo!函数会把自1970年1月1日起至今的总秒数返回为一个整数,因为时间永不停歇,所以每次执行程序时,都会得到不同的值。imeO函数需要一个参数NULL,NUL是在&lt; stdlib.h&gt;中定义的符号,表示不引用任何内容。NULL的用法和含义详见第7章因此,要在每次执行程序时得到不同的伪随机序列数,可以使用以下的语句:</p></blockquote><pre><code>#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt; #include &lt;time.h&gt;int main(){      srand(time(NULL));  //使用时钟值作为起始种子      int limit=20;      //伪随机值上限      int chosen=0;      chosen=rand()% limit;  // 0到限制-1（含）      int guess=0;   //储存猜测      int count=3;    //3次机会      printf(&quot;这是个猜谜游戏&quot;);      printf(&quot;选一个1和20之间的数字，你一定能猜到&quot;);      for(;count&gt;0;--count)      {           printf(&quot;你有%d次机会&quot;,count);           printf(&quot;猜猜看&quot;);           scanf(&quot;%d&quot;,&amp;guess);           if(guess==chosen)           {                printf(&quot;恭喜你猜对了&quot;);                 return 0;            }             else if(guess&lt;1||guess&gt;15999)            printf(&quot;请输入一个1-20的数字&quot;);            else              printf(&quot;你输入的%d是不对的，你的数字 %s &quot;,guess,chosen&gt;guess?&quot;小了&quot;:&quot;大了&quot;);       }      printf(&quot;你尝试了3次都失败了幸运数字是%d&quot;,chosen);     return 0; } </code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;循环&quot;&gt;&lt;a href=&quot;#循环&quot; class=&quot;headerlink&quot; title=&quot;循环&quot;&gt;&lt;/a&gt;循环&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;&lt;strong&gt; 重复执行一个语句块，直到满足某个条件为止，这称为循环 &lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2
+      
+    
+    </summary>
+    
+      <category term="C语言学习" scheme="https://geekrabbit.top/categories/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="c语言" scheme="https://geekrabbit.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>远程桌面连接提示要求的函数不受支持</title>
@@ -42,7 +93,7 @@
     <link href="https://geekrabbit.top/2020/05/20/%E6%8C%89%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     <id>https://geekrabbit.top/2020/05/20/按位运算符/</id>
     <published>2020-05-20T14:30:25.000Z</published>
-    <updated>2020-06-04T22:25:43.685Z</updated>
+    <updated>2020-06-23T08:45:27.951Z</updated>
     
     <content type="html"><![CDATA[<h2 id="按位运算符"><a href="#按位运算符" class="headerlink" title="按位运算符"></a>按位运算符</h2><blockquote><p>按位运算符有6个如下表：</p></blockquote><table><thead><tr><th>运算符</th><th>说明</th></tr></thead><tbody><tr><td>&amp;</td><td>按位与运算符</td></tr><tr><td>｜</td><td>按位或运算符</td></tr><tr><td>^</td><td>按位异或(EOR)运算符</td></tr><tr><td>~</td><td>按位非运算符，也成为1的补位运算符</td></tr><tr><td>&lt;&lt;</td><td>按位左运算符</td></tr><tr><td>&gt;&gt;</td><td>按位右运算符</td></tr></tbody></table><p><strong><strong> 这些运算符只能用与整数类型。~运算符是一元运算符，只处理一个操作数，其他的都是二元运算符 </strong></strong></p><h3 id="按位与运算符"><a href="#按位与运算符" class="headerlink" title="按位与运算符"></a>按位与运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p><pre><code>A = 0011 1100B = 0000 1101</code></pre><table><thead><tr><th>运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>&amp;</td><td>按位与操作，按二进制位进行”与”运算。运算规则：<code>0&amp;0=0;  0&amp;1=0;  1&amp;0=0;  1&amp;1=1;</code></td><td>(A &amp; B) 将得到 12，即为 <code>00001100</code></td></tr></tbody></table><h3 id="按位或运算符"><a href="#按位或运算符" class="headerlink" title="按位或运算符"></a>按位或运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p><pre><code>A = 0011 1100B = 0000 1101</code></pre><table><thead><tr><th>运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>｜</td><td>按位或运算符，按二进制位进行”或”运算。运算规则：<code>0｜0=0;  0｜1=1;  1｜0=1;  1｜1=1;</code></td><td>(A ｜ B) 将得到 61，即为 <code>00111101</code></td></tr></tbody></table><h3 id="按位异或运算符"><a href="#按位异或运算符" class="headerlink" title="按位异或运算符"></a>按位异或运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p><pre><code>A = 0011 1100B = 0000 1101</code></pre><table><thead><tr><th>运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>^</td><td>异或运算符，按二进制位进行”异或”运算。运算规则：<code>0^0=0;  0^1=1;  1^0=1;  1^1=0;</code></td><td>(A ^ B) 将得到 61，即为 <code>00110001</code></td></tr></tbody></table><h3 id="按位非运算符"><a href="#按位非运算符" class="headerlink" title="按位非运算符"></a>按位非运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p><pre><code>A = 0011 1100B = 0000 1101</code></pre><table><thead><tr><th>运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>~</td><td>取反运算符，按二进制位进行”取反”运算。运算规则：~1=0;  ~0=1;</td><td>(~A ) 将得到 -61，即为 <code>11000011</code>，一个有符号二进制数的补码形式。</td></tr></tbody></table><h3 id="按位左移运算符"><a href="#按位左移运算符" class="headerlink" title="按位左移运算符"></a>按位左移运算符</h3><p>假设如果 x = 13，且 y = 6，现在以二进制格式表示，它们如下所示：</p><pre><code>A = 0011 1100B = 0000 1101</code></pre><table><thead><tr><th>运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>&lt;&lt;</td><td>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）。</td><td>A &lt;&lt; 2 将得到 240，即为 <code>11110000</code></td></tr></tbody></table><h3 id="按位右移运算符"><a href="#按位右移运算符" class="headerlink" title="按位右移运算符"></a>按位右移运算符</h3><table><thead><tr><th>运算符</th><th>描述</th><th>实例</th></tr></thead><tbody><tr><td>&gt;&gt;</td><td>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃。</td><td>A &gt;&gt; 2 将得到 15，即为 00001111</td></tr></tbody></table><h2 id="按位运算符的op-用法"><a href="#按位运算符的op-用法" class="headerlink" title="按位运算符的op=用法"></a>按位运算符的op=用法</h2><blockquote><p>所有的二元按位运算符都可以在op=形式的赋值语句中使用，用~运算符例外，他是一元运算符例如：</p></blockquote><pre><code>1hs op=rhs;</code></pre><p>等价于</p><pre><code>1hs=1hs op (rhs);</code></pre><p>例如：</p><pre><code>value &lt;&lt;=4;</code></pre><p>其作用是将整数变量value的内容向左移动四位。等效于：</p><pre><code>value = value &lt;&lt; 4;</code></pre><p>二元运算符可以这样使用。例如：</p><pre><code>value &amp;=0xFF;</code></pre><p>其中value是一个整数变量，就等价于：</p><pre><code>value = value&amp; 0xFF;</code></pre><p>其作用是使最右边的8位保持不变，其他的位置都设为0</p>]]></content>
     
@@ -62,7 +113,7 @@
       <category term="C语言学习" scheme="https://geekrabbit.top/categories/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="C语言" scheme="https://geekrabbit.top/tags/C%E8%AF%AD%E8%A8%80/"/>
+      <category term="c语言" scheme="https://geekrabbit.top/tags/c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
@@ -441,53 +492,6 @@
     </summary>
     
       <category term="DDOS攻防学习" scheme="https://geekrabbit.top/categories/DDOS%E6%94%BB%E9%98%B2%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL数据库连接与管理（四）</title>
-    <link href="https://geekrabbit.top/2019/06/13/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E4%B8%8E%E7%AE%A1%E7%90%86%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
-    <id>https://geekrabbit.top/2019/06/13/MySQL数据库连接与管理（四）/</id>
-    <published>2019-06-13T09:53:59.000Z</published>
-    <updated>2019-06-15T02:44:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="使用Linux连接mysql服务器"><a href="#使用Linux连接mysql服务器" class="headerlink" title="使用Linux连接mysql服务器"></a>使用Linux连接mysql服务器</h2><p>从命令行中本地连接mysql服务器</p><pre><code class="bash">[root@hhost]# mysql -u root -p sh</code></pre><p>远程登陆MySQL</p><pre><code class="bash">[root@hhost]# mysql -h 服务器IP -u root</code></pre><p>登录成功后会出现 mysql&gt; 命令提示窗口</p><h3 id="显示所有数据库，注意后面的；"><a href="#显示所有数据库，注意后面的；" class="headerlink" title="显示所有数据库，注意后面的；"></a>显示所有数据库，注意后面的；</h3><pre><code class="bash">mysql&gt; show databases;+--------------------+| Database           |+--------------------+| information_schema || test               |+--------------------+2 rows in set (0.10 sec)</code></pre><h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><pre><code class="bash">use 数据库名</code></pre><h3 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h3><pre><code class="bash">mysql&gt; show tables;+----------------+| Tables_in_test |+----------------+| runoob_tbl     || sys_menu       |+----------------+2 rows in set (0.00 sec)</code></pre><h3 id="查表所有内容"><a href="#查表所有内容" class="headerlink" title="查表所有内容"></a>查表所有内容</h3><pre><code class="bash">select * from  表名;</code></pre><h3 id="显示表的属性，属性类型，主键信息-，是否为-NULL，默认值等其他信息"><a href="#显示表的属性，属性类型，主键信息-，是否为-NULL，默认值等其他信息" class="headerlink" title="显示表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息"></a>显示表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息</h3><pre><code class="bash">show columns from 数据表;</code></pre><pre><code class="bash">mysql&gt; show columns from runoob_tbl;+-----------------+------------------+------+-----+---------+----------------+| Field           | Type             | Null | Key | Default | Extra          |+-----------------+------------------+------+-----+---------+----------------+| runoob_id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment || runoob_title    | varchar(100)     | NO   |     | NULL    |                || runoob_author   | varchar(40)      | NO   |     | NULL    |                || submission_date | date             | YES  |     | NULL    |                |+-----------------+------------------+------+-----+---------+----------------+4 rows in set (0.06 sec)</code></pre><h3 id="显示数据表的详细索引信息，包括PRIMARY-KEY（主键）。"><a href="#显示数据表的详细索引信息，包括PRIMARY-KEY（主键）。" class="headerlink" title="显示数据表的详细索引信息，包括PRIMARY KEY（主键）。"></a>显示数据表的详细索引信息，包括PRIMARY KEY（主键）。</h3><pre><code class="bash">show index from runoob_tbl;</code></pre><pre><code class="bash">mysql&gt; show index from runoob_tbl;+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+| Table      | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+| runoob_tbl |          0 | PRIMARY  |            1 | runoob_id   | A         |           0 |     NULL | NULL   |      | BTREE      |         |               |+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+1 row in set (0.00 sec)</code></pre><h3 id="显示数据库test中的所有表信息"><a href="#显示数据库test中的所有表信息" class="headerlink" title="显示数据库test中的所有表信息"></a>显示数据库test中的所有表信息</h3><pre><code class="bash">show table status from 库名;</code></pre><pre><code class="bash">mysql&gt; show table status from test;+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+| Name       | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation       | Checksum | Create_options | Comment |+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+| runoob_tbl | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-05 14:57:14 | NULL        | NULL       | utf8_general_ci |     NULL |                |         || sys_menu   | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-03 09:54:08 | NULL        | NULL       | utf8_general_ci |     NULL |                | 菜单    |+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+2 rows in set (0.00 sec)</code></pre><h3 id="表名以runoob开头的表的信息"><a href="#表名以runoob开头的表的信息" class="headerlink" title="表名以runoob开头的表的信息"></a>表名以runoob开头的表的信息</h3><pre><code class="bash">show table status from 库名 like &#39;表名%&#39;;</code></pre><pre><code class="bash">mysql&gt; show table status from test like &#39;runoob%&#39;;+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+| Name       | Engine | Version | Row_format | Rows | Avg_row_length | Data_length | Max_data_length | Index_length | Data_free | Auto_increment | Create_time         | Update_time | Check_time | Collation       | Checksum | Create_options | Comment |+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+| runoob_tbl | InnoDB |      10 | Compact    |    0 |              0 |       16384 |               0 |            0 |         0 |              1 | 2019-06-05 14:57:14 | NULL        | NULL       | utf8_general_ci |     NULL |                |         |+------------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+-------------+------------+-----------------+----------+----------------+---------+1 row in set (0.00 sec)</code></pre><h3 id="加上-G，查询结果按列打印"><a href="#加上-G，查询结果按列打印" class="headerlink" title="加上 \G，查询结果按列打印"></a>加上 \G，查询结果按列打印</h3><pre><code class="bash">show table status from 库名 like &#39;表名%&#39;\G;</code></pre><pre><code class="bash">mysql&gt; show table status from test like &#39;runoob%&#39;\G;*************************** 1. row ***************************           Name: runoob_tbl         Engine: InnoDB        Version: 10     Row_format: Compact           Rows: 0 Avg_row_length: 0    Data_length: 16384Max_data_length: 0   Index_length: 0      Data_free: 0 Auto_increment: 1    Create_time: 2019-06-05 14:57:14    Update_time: NULL     Check_time: NULL      Collation: utf8_general_ci       Checksum: NULL Create_options:         Comment: 1 row in set (0.00 sec)ERROR: No query specified</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;使用Linux连接mysql服务器&quot;&gt;&lt;a href=&quot;#使用Linux连接mysql服务器&quot; class=&quot;headerlink&quot; title=&quot;使用Linux连接mysql服务器&quot;&gt;&lt;/a&gt;使用Linux连接mysql服务器&lt;/h2&gt;&lt;p&gt;从命令行中本地连接m
-      
-    
-    </summary>
-    
-      <category term="MySQL数据库学习" scheme="https://geekrabbit.top/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL数据库开启与关闭（三）</title>
-    <link href="https://geekrabbit.top/2019/06/12/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%90%AF%E4%B8%8E%E5%85%B3%E9%97%AD%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-    <id>https://geekrabbit.top/2019/06/12/MySQL数据库开启与关闭（三）/</id>
-    <published>2019-06-12T14:33:25.000Z</published>
-    <updated>2019-06-12T14:40:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="启动方式"><a href="#启动方式" class="headerlink" title="启动方式"></a>启动方式</h2><p>1、使用linux命令service 启动：</p><pre><code class="bash">service mysqld start</code></pre><p>2、使用 mysqld 脚本启动：</p><pre><code class="bash">/etc/inint.d/mysqld start</code></pre><p>3、使用 safe_mysqld 启动：</p><pre><code class="bash">safe_mysqld&amp;</code></pre><h2 id="停止方式"><a href="#停止方式" class="headerlink" title="停止方式"></a>停止方式</h2><p>1、使用 service 启动：</p><pre><code class="bash">service mysqld stop</code></pre><p>2、使用 mysqld 脚本启动：</p><pre><code class="bash">/etc/inint.d/mysqld stop</code></pre><p>3、</p><pre><code class="bash">mysqladmin shutdown</code></pre><h2 id="重启方式"><a href="#重启方式" class="headerlink" title="重启方式"></a>重启方式</h2><p>1、使用 service 启动：</p><pre><code class="bash">service mysqld restart</code></pre><p>2、使用 mysqld 脚本启动：</p><pre><code class="bash">/etc/inint.d/mysqld restart</code></pre><p>查看mysql端口是否已经使用，使用netstat -anp 命令查看服务器端口使用情况</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;启动方式&quot;&gt;&lt;a href=&quot;#启动方式&quot; class=&quot;headerlink&quot; title=&quot;启动方式&quot;&gt;&lt;/a&gt;启动方式&lt;/h2&gt;&lt;p&gt;1、使用linux命令service 启动：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;service mys
-      
-    
-    </summary>
-    
-      <category term="MySQL数据库学习" scheme="https://geekrabbit.top/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
