@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://geekrabbit.top/"/>
-  <updated>2020-07-11T02:05:31.942Z</updated>
+  <updated>2020-07-15T09:26:02.220Z</updated>
   <id>https://geekrabbit.top/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>循环（二）</title>
+    <link href="https://geekrabbit.top/2020/07/15/%E5%BE%AA%E7%8E%AF%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>https://geekrabbit.top/2020/07/15/循环（二）/</id>
+    <published>2020-07-15T09:26:02.000Z</published>
+    <updated>2020-07-15T09:26:02.220Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>开启ssh服务</title>
@@ -469,29 +483,6 @@
     </summary>
     
       <category term="MySQL数据库学习" scheme="https://geekrabbit.top/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>拒接服务介绍和DoS分类（一）</title>
-    <link href="https://geekrabbit.top/2019/06/15/%E6%8B%92%E6%8E%A5%E6%9C%8D%E5%8A%A1%E4%BB%8B%E7%BB%8D%E5%92%8CDoS%E5%88%86%E7%B1%BB%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>https://geekrabbit.top/2019/06/15/拒接服务介绍和DoS分类（一）/</id>
-    <published>2019-06-15T03:27:15.000Z</published>
-    <updated>2019-06-15T05:41:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="什么是DDOS"><a href="#什么是DDOS" class="headerlink" title="什么是DDOS"></a>什么是DDOS</h3><p>DDOS是（Distributed Denial of Service）的缩写，即分布式阻断服务，黑客利用入侵到的傀儡主机攻击来达到“妨碍正常使用者使用服务”的目的，这样就形成了DDOS攻击，随着互联网的不断发展，竞争越来越激烈，各式各样的DDOS攻击开始出现。</p><h3 id="拒绝服务"><a href="#拒绝服务" class="headerlink" title="拒绝服务"></a>拒绝服务</h3><ul><li>DOS不是DoS</li><li>DoS(Denial of Service)拒接服务，利用程序漏洞或一对一的资源消耗</li></ul><h3 id="DDOS分布式拒绝服务"><a href="#DDOS分布式拒绝服务" class="headerlink" title="DDOS分布式拒绝服务"></a>DDOS分布式拒绝服务</h3><ul><li>多对一的攻击汇聚资源能力，重点在于量大，属于资源消耗型</li></ul><h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><ul><li>以前：欠缺技术的无赖，我ping死你（最难缠的无赖）</li><li>现在：最强大最危险的攻击，攻击方式众多</li></ul><h3 id="DoS分类"><a href="#DoS分类" class="headerlink" title="DoS分类"></a>DoS分类</h3><ul><li>网络<br>基于巨量的flood耗尽目标的网络带宽的资源消耗<br>ICMP Flood 、UDP Flood</li><li>协议<br>攻击协议漏洞发起的拒绝服务攻击<br>syn flood 、ping of Death 、ARP 、DNS 、802.11 、SSL     </li><li>应用<br>1.针对应用软件和操作系统漏洞发起的拒绝服务攻击<br>2.大量频繁访问消耗系统资源严重的应用（cc)<br>3.通产表现为操作系统运行正常，网络流量不大，但服务停止响应</li></ul><h3 id="为何会被DoS"><a href="#为何会被DoS" class="headerlink" title="为何会被DoS"></a>为何会被DoS</h3><ul><li>从攻击者到被害者<br>-网络——&gt;FW——&gt;服务器os——&gt;服务应用</li><li>资源消耗<br>-网络：带宽<br>-FW：吞吐量、并发连接<br>-服务器：CPU、内存、I/O<br>-应用：处理请求能力，对os资源的使用权</li><li>程序漏洞攻击<br>-缓冲区溢出<br>-协议、程序逻辑漏洞</li><li>链路上任何一点都可成为目标</li><li>草图<br><img src="https://i.loli.net/2019/06/15/5d0484e8ad7d946542.png" alt=""><br><img src="https://i.loli.net/2019/06/15/5d048514f250562628.png" alt=""></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;什么是DDOS&quot;&gt;&lt;a href=&quot;#什么是DDOS&quot; class=&quot;headerlink&quot; title=&quot;什么是DDOS&quot;&gt;&lt;/a&gt;什么是DDOS&lt;/h3&gt;&lt;p&gt;DDOS是（Distributed Denial of Service）的缩写，即分布式阻断服务，黑
-      
-    
-    </summary>
-    
-      <category term="DDOS攻防学习" scheme="https://geekrabbit.top/categories/DDOS%E6%94%BB%E9%98%B2%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
